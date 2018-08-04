@@ -1,0 +1,2450 @@
+/*  
+
+    Autor: Marcos Brito
+    E-mail: marcos.venicios@outlook.com
+    
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    ÍNDICE DE SEÇÕES A FIM DE FUTURAS EDIÇÕES
+
+    (Ctrl + F: busque pelo número e nome do índice)
+
+        00. GOOGLE FONTS, IMPORTS, MIXINS, CUSTOM E COLORS
+        01. HEADER E FOOTER  
+        02. WEBDOOR
+        03. FORMULÁRIO
+        04. FASES
+        05. VIDEO 
+        06. MANIFESTO
+        07. AS NOVAS MEDIDAS
+        08. CONHEÇA AGORA
+        09. COMO POSSO ME UNIR
+        10. MOBILIZE
+        11. PARCEIROS
+        12. MODAL
+        
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+*/
+
+body {
+    overflow: hidden;
+  }
+  
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+  }
+  
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+  }
+  
+// 00. GOOGLE FONTS, IMPORTS, MIXINS, CUSTOM E COLORS +++++++++++
+
+    // Google Fonts
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+    // Mixins
+    @import 'mixins';
+
+    // Hover Animations  
+    @import url("hover.css");
+
+    // Colors
+    $branco: #fff;
+    $preto: #000;
+    $cinza: #b7b8b7;
+    $cinza-escuro: #777777;
+    $cinza-claro: #e2e3e4;
+    $grafite: #4a4a4a;
+    $azul: #2f3192;
+    $azul-escuro: #000083;
+    $azul-claro: #24a8d9;
+    $azul-light: #00adec;
+    $rosa: #d5258f;
+    $rosa-light: #ec008c;
+
+// FIM 00. IMPORTS, MIXINS, CUSTOM E COLORS +++++++++++
+
+
+// 01. HEADER E FOOTER +++++++++++
+
+    // header
+    header {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: $cinza-claro;
+        padding: 50px 0;
+        background: url(../img/bg-cinza.jpg) repeat;
+
+        .cnt-mn {
+            display: block;
+            overflow: hidden;
+            float: left;
+            padding-top: 8px;
+
+            a {
+                display: block;
+                float: left;
+                margin-right: 60px;
+                @include folio();
+                font-size: 20px;
+                color: $azul-escuro;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .hvr-underline-from-left:before {
+                background: $azul-escuro;
+            }
+
+            .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+                right: 20px;
+            }
+
+            .lnk-mntop-ativo {
+                background: $rosa-light;
+                color: $branco;
+                padding: 2px 5px;
+            }
+
+        }
+
+        .cnt-sociais {
+            display: block;
+            overflow: hidden;
+            float: right;
+
+            a.lnk-social {
+                display: block;
+                float: left;
+                width: 38px;
+                height: 38px;
+                background: $azul-escuro;
+                font-size: 20px;
+                color: $cinza-claro;
+                text-decoration: none;
+                text-align: center;
+                padding-top: 5px;
+                margin-left: 15px;
+                @include border-radius(50%);
+                @include transition(0.3s);
+
+                &:hover {
+                    background: $branco;
+                    color: $azul-escuro;
+                }
+
+            }
+
+        }
+        .fixar {
+            position:fixed;
+            top:0;
+            margin-top: 0px !important;
+            padding:10px;
+            z-index:200;
+            background-color:$cinza-claro;
+            width:100vw;
+            opacity:0.9;
+            moz-opacity:0.9;
+            filter: alpha(opacity=90);
+
+            .cnt-mn{
+                margin-left:-10px;
+            }
+        }
+
+    }
+
+    // footer
+    footer {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background: #e1e1e1;
+        padding: 70px 0;
+    }
+
+// FIM 01. HEADER E FOOTER +++++++++++
+
+
+// 02. WEBDOOR +++++++++++
+
+    .section-webdoor {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: url(../img/bg-cinza.jpg) repeat;
+        padding-bottom: 50px;
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0 0 0;
+
+            img {
+                margin: 0 auto;
+            }
+
+        }
+
+        .desktop {
+            display: block;
+        }
+        .mobile {
+            display: none;
+        }
+
+    }
+
+// FIM 02. WEBDOOR +++++++++++
+
+
+// 03. FORMULÁRIO +++++++++++
+
+    .section-formulario {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: $azul url(../img/seta-bg-form.jpg) center top no-repeat;
+        padding: 50px 0;
+
+        h2 {
+            margin: 0;
+            width: 100%;
+            @include folio;
+            font-size: 50px;
+            color: $branco;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #frmResp {
+            display: none;
+            overflow: hidden;
+            width: auto;
+            height: auto;
+
+            .cnt-sociais {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin: 30px 0;
+
+                a.lnk-social-whatsapp {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: #0cc679;
+                    color: $branco;
+                    font-size: 30px;
+                    padding: 4px 0 0 0;
+                    margin: 0 30px 0 0;
+                    @include transition(0.3s);
+
+                    &:hover {
+                        color: #0cc679;
+                        background: $branco;
+                    }
+
+                }
+
+                a.lnk-social-facebook {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: #4563b6;
+                    color: $branco;
+                    font-size: 30px;
+                    padding: 4px 0 0 0;
+                    @include transition(0.3s);
+
+                    &:hover {
+                        color: #4563b6;
+                        background: $branco;
+                    }
+
+                }
+
+            }
+
+        }
+
+        form {
+            margin-top: 30px;
+            width: 100%;
+            text-align: left;
+
+            .form-group {
+
+                .form-control {
+                    border: 1px solid $branco;
+                    border-radius: 0;
+                    background: none;
+                    @include folio;
+                    font-size: 18px;
+                    color: $branco;
+                    letter-spacing: 2px;
+                }
+
+                .form-control::-moz-placeholder {
+                    color: $branco;
+                    opacity: 1;
+                }
+                .form-control:-ms-input-placeholder {
+                    color: $branco;
+                }
+                .form-control::-webkit-input-placeholder {
+                    color: $branco;
+                }
+
+            }
+
+            .checkbox {
+                margin-bottom: 20px;
+            }
+
+            .checkbox label {
+                //@include folio;
+                @include opensans;
+                font-size: 14px;
+                color: $branco;
+                text-align: left;
+            }
+
+            .checkbox label:after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+              
+            .checkbox .cr {
+                position: relative;
+                display: inline-block;
+                border: 2px solid $branco;
+                border-radius: 0;
+                width: 20px;
+                height: 20px;
+                float: left;
+                margin-right: .5em;
+                margin-left: -35px;
+            }
+              
+            .checkbox .cr .cr-icon {
+                position: absolute;
+                font-size: .8em;
+                line-height: 0;
+                top: 50%;
+                left: 15%;
+                color: $branco;
+            }
+              
+            .checkbox label input[type="checkbox"] {
+                display: none;
+            }
+              
+            .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+                opacity: 0;
+            }
+              
+            .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+                opacity: 1;
+            }
+              
+            .checkbox label input[type="checkbox"]:disabled+.cr {
+                opacity: .5;
+            }
+
+            .cnt-bt-enviar-form {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                padding-top: 30px;
+            }
+
+            .btn-default {
+                border: none;
+                border-radius: 0;
+                background: $rosa;
+                @include folio;
+                font-size: 24px;
+                color: $branco;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                padding: 15px 40px;
+                margin: 30px auto 0 auto;
+            }
+
+            .hvr-sweep-to-bottom:before {
+                background: $branco;
+            }
+
+            .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                color: $azul-escuro;
+            }
+
+
+
+
+
+
+            
+            input[type="checkbox"] {
+                display:block;
+            }
+            
+            input[type="checkbox"] + label {
+                position: absolute;
+                color:#f2f2f2;
+                top: -3px;
+                left: -3px;
+                @include opensans;
+                font-size: 14px;
+                color: $branco;
+                text-align: left;
+            }
+            
+            input[type="checkbox"] + label span {
+                display:inline-block;
+                width:24px;
+                height:20px;
+                margin:-2px 10px 0 0;
+                vertical-align:middle;
+                
+                background:url(../img/bg-checkbox.png) left top no-repeat;
+                //background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+                cursor:pointer;
+            }
+            
+            input[type="checkbox"]:checked + label span {
+                background:url(../img/bg-checkbox.png) -25px top no-repeat;;
+                //background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+            }
+            
+
+
+
+
+
+
+
+        }
+
+    }
+
+// FIM 03. FORMULÁRIO +++++++++++
+
+
+
+// 04. FASES +++++++++++
+
+    .section-fases-mobile {
+        display: none;
+    }
+
+    .section-fases {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: url(../img/bg-cinza.jpg) repeat;
+        padding: 50px 0 20px 0;
+
+        .col-md-1 {
+            padding: 0;
+        }
+
+        h2 {
+            margin: 0 0 30px 0;
+            width: 100%;
+            @include folio;
+            font-size: 38px;
+            color: $azul-escuro;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h3 {
+            margin: 0 0 54px 0;
+            width: 100%;
+            @include folio;
+            font-size: 28px;
+            color: $azul-escuro;
+            text-align: center;
+            padding:0 50px;
+        }
+        .cnt-data-inicio {
+            display: block;
+            overflow: hidden;
+            float: left;
+            margin-left: 50px;
+        }
+
+        .cnt-data-fim {
+            display: block;
+            overflow: hidden;
+            float: right;
+            margin-right: 50px;
+        }
+
+        span.txt01 {
+            display: block;
+            float: left;
+            background: $azul;
+            @include folio;
+            font-size: 18px;
+            color: $branco;
+            text-transform: uppercase;
+            padding: 0 3px;
+        }
+
+        span.txt02 {
+            display: block;
+            float: left;
+            @include folio;
+            font-size: 18px;
+            color: $azul;
+            text-transform: uppercase;
+            padding: 0 3px;
+        }
+
+        .seta-corpo {
+            overflow: hidden;
+            height: 28px;
+            background: url(../img/seta-corpo.png) repeat-x;
+            padding:0;
+
+            .seta-left {
+                display: block;
+                float: left;
+            }
+
+            .seta-right {
+                display: block;
+                float: right;
+            }
+
+        }
+
+        /*
+        .align-datas {
+            padding: 0 50px;
+            margin-top: 60px;
+        }
+        */
+
+        .align-datas {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .box-etapa {
+            display: inline-block;
+            overflow: hidden;
+            width: auto;
+            height: auto;
+            margin-right: 10%;
+
+            .cnt-numero {
+                display: block;
+                overflow: hidden;
+                float: left;
+                @include folio;
+                font-size: 100px;
+                color: $azul;
+            }
+    
+            .cnt-texto {
+                display: block;
+                overflow: hidden;
+                float: left;
+                border-left: 2px solid $azul;
+                min-height: 157px;
+                padding: 32px 0 0 0;
+                margin-left: 10px;
+    
+                p {
+                    @include folio;
+                    font-size: 30px;
+                    color: $azul;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    padding-left: 10px;
+                }
+    
+                p:after {
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    margin-left: -10px;
+                    background: rgba(236,0,142,1);
+                    background: -moz-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -webkit-gradient(left top, right bottom, color-stop(50%, rgba(236,0,142,1)), color-stop(50%, rgba(227,50,34,0)));
+                    background: -webkit-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -o-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -ms-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: linear-gradient(135deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec008e', endColorstr='#e33222', GradientType=1 );
+                }
+    
+            }
+
+        }
+
+        .box-etapa:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+// FIM 04. FASES +++++++++++
+
+
+
+// 05. VIDEO +++++++++++
+
+    .section-video {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        padding: 50px 0 0 0;
+
+        h2 {
+            width: 100%;
+            @include folio;
+            font-size: 37px;
+            color: $azul-escuro;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            display: block;
+            overflow: hidden;
+            width: 34px;
+            height: 34px;
+            border: 1px solid $azul-escuro;
+            @include border-radius(50%);
+            padding: 5px 0 0 8px;
+            margin: 0 auto 30px auto;
+
+            .fa-angle-down {
+                color: $azul-escuro;
+            }
+
+        }
+
+        .cnt-video {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            min-height: 741px;
+            background: url(../img/bg-video.jpg) no-repeat center top;
+            background-size: cover;
+            text-align: center;
+
+            .cnt-btn-play {
+                display: block;
+                overflow: hidden;
+                width: 133px;
+                height: 133px;
+                border: 2px solid $branco;
+                border-radius: 50%;
+                padding: 18px;
+                margin: 15% auto 0 auto;
+
+                .lnk-play {
+                    display: block;
+                    overflow: hidden;
+                    width: 90px;
+                    height: 90px;
+                    background: $branco;
+                    color: $azul;
+                    font-size: 40px;
+                    border-radius: 50%;
+                    padding-top: 18px;
+                    padding-left: 8px;
+                    @include transition(0.3s);
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $branco;
+                        background: $azul;
+                    }
+
+                }
+
+            }
+
+            .cnt-social-share {
+                display: block;
+                overflow: hidden;
+                position: absolute;
+                top: 30px;
+                right: 20%;
+                width: auto;
+                height: auto;
+
+                a.lnk-share-whats {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background: #0cc679;
+                    color: $branco;
+                    font-size: 34px;
+                    padding: 7px 0 0 0;
+                    margin: 0 10px 0 0;
+                    @include transition(0.3s);
+
+                    &:hover {
+                        color: #0cc679;
+                        background: $branco;
+                    }
+                }
+
+                a.lnk-share-facebook {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background: #4563b6;
+                    color: $branco;
+                    font-size: 30px;
+                    padding: 10px 0 0 0;
+                    margin: 0 10px 0 0;
+                    @include transition(0.3s);
+
+                    &:hover {
+                        color: #4563b6;
+                        background: $branco;
+                    }
+
+                }
+
+                a.lnk-share-twitter {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background: $azul-light;
+                    color: $branco;
+                    font-size: 30px;
+                    padding: 10px 0 0 0;
+                    @include transition(0.3s);
+
+                    &:hover {
+                        color: $azul-light;
+                        background: $branco;
+                    }
+
+                }
+
+            }
+
+
+            .cnt-box-video {
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                min-height: 741px;
+                background: rgba(0,0,0,0.8);
+                z-index: 9999;
+
+                .box-vido-full {
+                    display: table;
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;
+                    min-height: 741px;
+
+                    .lnk-bt-fechar {
+                        display: block;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 50px;
+                        height: 50px;
+                        padding: 10px 10px 10px 10px;
+                        color: $grafite;
+                        font-size: 20px;
+                        background: $branco;
+                        @include transition(0.3s);
+
+                        &:hover {
+                            color: $branco;
+                            background: $azul;
+                        }
+
+                    }
+
+                    .content-video {
+                        display: table-cell; 
+                        vertical-align: middle;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .acabamento-video {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: 7px;
+            background: #eb008d;
+            background: -moz-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+            background: -webkit-gradient(left top, right top, color-stop(50%, #eb008d), color-stop(50%, #00aceb));
+            background: -webkit-linear-gradient(left, #eb008d 0%, #00aceb 50%);
+            background: -o-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+            background: -ms-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+            background: linear-gradient(to right, #eb008d 50%, #00aceb 50%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb008d', endColorstr='#00aceb', GradientType=1 );
+        }
+
+    }
+
+// FIM 05. VIDEO +++++++++++
+
+
+// 06. MANIFESTO +++++++++++
+
+    .section-manifesto {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 40px 0 0 0;
+
+        h2 {
+            width: 100%;
+            @include folio;
+            font-size: 37px;
+            color: $cinza;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 0;
+            cursor: pointer;
+        }
+        h3 {
+            width: 100%;
+            @include folio;
+            font-size: 30px;
+            color: $cinza_escuro;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        a.lnk-abrir-manifesto {
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            top: 118px;
+            left: 50%;
+            width: 55px;
+            height: 56px;
+            margin: 0 auto;
+            padding-top: 14px;
+            font-size: 28px;
+            color: $azul-light;
+            text-align: center;
+            background: url(../img/bg-circulo.png) no-repeat;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            @include transition(0.3s);
+            z-index: 100;
+
+            .fa-plus {
+                display: block;
+            }
+
+            .fa-minus {
+                display: none;
+            }
+
+        }
+
+        a.lnk-abrir-manifesto-ativo {
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            top: 118px;
+            left: 50%;
+            width: 55px;
+            height: 56px;
+            margin: 0 auto;
+            padding-top: 15px;
+            font-size: 28px;
+            color: $azul-light;
+            text-align: center;
+            background: url(../img/bg-circulo.png) no-repeat;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            @include transition(0.3s);
+            z-index: 100;
+
+            .fa-plus {
+                display: none;
+            }
+
+            .fa-minus {
+                display: block;
+            }
+
+        }
+
+        .cnt-texto-manifesto {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 32px;
+            padding-top: 25px;
+            @include transition(0.3s);
+
+            .text-completo {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                /*
+                height: 450px; 
+                padding-top: 50px;
+                */
+                height: 0px; 
+                padding-top: 0px;
+                text-align: center;
+                @include transition(0.3s);
+
+                p {
+                    //@include folio;
+                    @include opensans;
+                    font-size: 18px;
+                    color: $grafite;
+                    padding-bottom: 30px;
+                }
+
+            }
+
+            .text-completo-ativo {
+                height: 629px; 
+                padding-top: 50px;
+            }
+
+            .acabamento-texto-manifesto {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 7px;
+                background: #eb008d;
+                background: -moz-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+                background: -webkit-gradient(left top, right top, color-stop(50%, #eb008d), color-stop(50%, #00aceb));
+                background: -webkit-linear-gradient(left, #eb008d 0%, #00aceb 50%);
+                background: -o-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+                background: -ms-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+                background: linear-gradient(to right, #eb008d 50%, #00aceb 50%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb008d', endColorstr='#00aceb', GradientType=1 );
+            }
+
+        }
+
+        .cnt-texto-manifesto-ativo {
+            height: 662px;
+        }
+
+        .cnt-acabamento-bottom {
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            width: 100%;
+            height: 50px;
+            background: url(../img/bg-asnovasmedidas.jpg) no-repeat center top;
+        }
+
+    }
+
+// FIM 06. MANIFESTO +++++++++++
+
+
+// 07. AS NOVAS MEDIDAS +++++++++++
+
+    .section-as-novas-medidas {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: url(../img/bg-asnovasmedidas.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 80px 0 50px 0;
+
+        .cnt-logo {
+            margin-left: 100px;
+        }
+
+        .cnt-logo-mobile {
+            display: none;
+        }
+
+        .cnt-icone {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+
+            p {
+                @include folio();
+                font-size: 24px;
+                color: $azul-escuro;
+                text-transform: uppercase;
+                margin-top: 40px;
+            }
+
+        }
+        .lnk-bt {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            background: $azul;
+            padding: 0;
+            @include opensans;
+            font-size: 24px;
+            color: $branco;
+            text-align: center;
+            padding: 20px 0;
+            margin: 30px auto;
+            display:block;
+        }
+
+    }
+
+// FIM 07. AS NOVAS MEDIDAS +++++++++++
+
+
+// 08. CONHEÇA AGORA +++++++++++
+
+    .section-conheca-agora-mobile {
+        display: none;
+    }
+
+    .section-conheca-agora {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: $cinza-claro;
+        padding: 40px 0 0 0;
+
+        .divisor {
+            clear: both;
+            display: block;
+            overflow: hidden;
+            width: auto;
+            height: 30px;
+        }
+
+        h2 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            @include folio;
+            font-size: 37px;
+            color: $azul;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0;
+            //background: url(../img/bg-tit-conheca-agora.png) no-repeat 715px top;
+        }
+
+        h2:before {
+            content: '';
+            display: block;
+            float: left;
+            width: 32%; 
+            height: 2px;
+            background: $azul;
+            margin: 20px 0 0 0;
+        }
+        h2:after {
+            content: '';
+            display: block;
+            float: right;
+            width: 32%; 
+            height: 2px;
+            background: $azul;
+            margin: 20px 30px 0 0;
+        }
+
+
+        .cnt-medidas {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: auto;
+            //background: #e7e8e8 url(../img/bg-conheca.jpg) no-repeat center top;
+            //background-size: cover;
+            padding: 42px 0 70px 0;
+            margin-top: 40px;
+
+            /*
+            .collapsed {
+                background: url(../img/bg-collapse-leia.jpg) no-repeat right 55px;
+
+                .lnk-medida {
+                    background: none;
+                }
+
+            }
+            */
+
+            .panel {
+                overflow: hidden;
+                width: auto;
+                height: auto;
+                border-radius: 0;
+                border: 0;
+                box-shadow: none;
+                margin-bottom: 30px;
+            }
+
+            .col-sm-2 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .col-sm-8 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .lnk-medida {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                background: url(../img/bg-collapse-fechar.jpg) no-repeat right 55px;
+                //background: $branco;
+            }
+
+            .cnt-num-bloco {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                background: $azul;
+                padding: 15px 0 10px 0;
+                text-align: center;
+
+                span.txt-bloco {
+                    display: block;  
+                    overflow: hidden;
+                    @include folio;
+                    font-size: 23px;
+                    color: $branco;
+                    text-transform: uppercase;
+                    text-align: center;
+                    width: 80%;
+                    padding: 0 0 5px 0;
+                    border-bottom: 3px solid $branco;
+                    margin: 0 auto;
+                }
+
+                span.num-bloco {
+                    display: block;  
+                    overflow: hidden;
+                    @include folio;
+                    font-size: 58px;
+                    color: $branco;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+            }
+
+            .cnt-titulo-bloco {
+                display: table;
+                overflow: hidden;
+                width: 100%;
+                min-height: 147px;
+                padding-right: 20px;
+
+                span.titulo-medida {
+                    display: table-cell; 
+                    vertical-align: middle;
+                    min-height: 147px;
+                    @include opensans;
+                    font-size: 20px;
+                    color: $cinza;
+                    padding: 0 0 0 10px;
+                }
+
+            }
+
+            .cnt-btn-leia {
+                display: table;
+                overflow: hidden;
+                width: 100%;
+                min-height: 147px;
+                background: $branco;
+
+                .cnt-cnt {
+                    display: table-cell; 
+                    vertical-align: middle;
+                    min-height: 123px;
+
+                    .lnk-leia {
+                        display: block;
+                        overflow: hidden;
+                        border: 2px solid $azul;   
+                        @include folio;
+                        font-size: 20px;
+                        color: $azul;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 70px;
+                        padding: 0;
+                        margin: 0 auto;
+                    }
+
+                    .hvr-sweep-to-bottom:before {
+                        background: $rosa;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $branco;
+                    }
+
+                }
+
+            }
+
+            /*
+            .col-md-12 {
+                margin-bottom: 20px;
+            }
+
+            .reset-padding {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            
+
+            .cnt-num-bloco {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                background: $azul;
+                padding: 15px 20px 10px 20px;
+
+                span.txt-bloco {
+                    display: block;  
+                    overflow: hidden;
+                    @include folio;
+                    font-size: 23px;
+                    color: $branco;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                    border-bottom: 3px solid $branco;
+                    padding: 0;
+                    margin: 0 0 10px 0;
+                }
+
+                span.num-bloco {
+                    display: block;  
+                    overflow: hidden;
+                    @include folio;
+                    font-size: 58px;
+                    color: $branco;
+                    line-height: 60px;
+                    padding: 0;
+                    margin: 0;
+                }
+
+            }
+
+            .cnt-titulo-bloco {
+                display: table;
+                overflow: hidden;
+                width: 100%;
+                min-height: 123px;
+                background: $branco;
+
+                span.titulo-medida {
+                    display: table-cell; 
+                    vertical-align: middle;
+                    min-height: 118px;
+                    @include opensans;
+                    font-size: 20px;
+                    color: $cinza;
+                    padding: 0 0 0 10px;
+                }
+
+            }
+
+            .cnt-btn-leia {
+                display: table;
+                overflow: hidden;
+                width: 100%;
+                min-height: 123px;
+                background: $branco;
+
+                .cnt-cnt {
+                    display: table-cell; 
+                    vertical-align: middle;
+                    min-height: 123px;
+
+                    .lnk-leia {
+                        display: block;
+                        overflow: hidden;
+                        border: 2px solid $azul;   
+                        @include folio;
+                        font-size: 20px;
+                        color: $azul;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 90px;
+                        padding: 0;
+                        margin: 0 auto;
+                    }
+
+                    .hvr-sweep-to-bottom:before {
+                        background: $rosa;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $branco;
+                    }
+
+                }
+
+            }
+            */
+
+            a.lnk-baixar-arquivo-completo {
+                display: block;
+                overflow: hidden;
+                width: auto;
+                height: auto;
+                background: $azul;
+                padding: 0;
+                @include opensans;
+                font-size: 24px;
+                color: $branco;
+                text-align: center;
+                text-decoration: none;
+                padding: 20px 0;
+                margin: 30px 0;
+            }
+
+            .hvr-sweep-to-bottom:before {
+                background: $branco;
+            }
+
+            .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                color: $azul;
+            }
+            
+
+            .box-integra-medida {
+                overflow: hidden;
+                width: auto;
+                height: auto;
+                background: $branco;
+
+                .texto-integra {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: auto;
+                    //height: 670px;
+                    //overflow-y: scroll;
+                    //overflow-x: hidden;
+                    padding: 20px 20px;
+
+                    h3 {
+                        @include opensans;
+                        font-size: 16px;
+                        color: $azul;
+                    }
+
+                    p {
+                        @include opensans;
+                        font-size: 14px;
+                        color: $cinza;
+                    }
+
+                    .bt_download {
+                        display: block;
+                        overflow: hidden;
+                        border: 2px solid $azul;   
+                        @include folio;
+                        font-size: 16px;
+                        color: $azul;
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        width: 200px;
+                        padding: 0;
+                    }
+
+                    .hvr-sweep-to-bottom:before {
+                        background: $rosa;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $branco;
+                    }
+
+                }
+
+                /* Let's get this party started */
+                ::-webkit-scrollbar {
+                    width: 21px;
+                }
+                
+                /* Track */
+                ::-webkit-scrollbar-track {
+                    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+                    //-webkit-border-radius: 10px;
+                    //border-radius: 10px;
+                    background: url(../img/bg-tracker.jpg) repeat-y;
+                    //background: $azul;
+                }
+                
+                /* Handle */
+                ::-webkit-scrollbar-thumb {
+                    //-webkit-border-radius: 10px;
+                    //border-radius: 10px;
+                    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+                    background: $azul;  
+                }
+                ::-webkit-scrollbar-thumb:window-inactive {
+                    background: $azul;
+                }
+
+            }
+
+
+
+            /*
+            .box-integra-medida {
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                padding: 0 31px;
+                //margin: 0 0 0 45px;
+
+                .conteudo-integra {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    background: $branco;
+
+                    .topo-integra {
+                        display: block;
+                        overflow: hidden;
+                        width: 100%;
+
+                        .cnt-num-bloco {
+                            display: block;
+                            overflow: hidden;
+                            float: left;
+                            width: 100px;
+                            height: auto;
+                            background: $azul;
+                            padding: 15px 20px 10px 20px;
+            
+                            span.txt-bloco {
+                                display: block;  
+                                overflow: hidden;
+                                @include folio;
+                                font-size: 23px;
+                                color: $branco;
+                                line-height: 25px;
+                                text-transform: uppercase;
+                                border-bottom: 3px solid $branco;
+                                padding: 0;
+                                margin: 0 0 10px 0;
+                            }
+            
+                            span.num-bloco {
+                                display: block;  
+                                overflow: hidden;
+                                @include folio;
+                                font-size: 58px;
+                                color: $branco;
+                                line-height: 60px;
+                                padding: 0;
+                                margin: 0;
+                            }
+            
+                        }
+
+                        .cnt-titulo-bloco {
+                            display: table;
+                            overflow: hidden;
+                            float: left;
+                            width: auto;
+                            min-height: 123px;
+                            background: $branco;
+            
+                            span.titulo-medida {
+                                display: table-cell; 
+                                vertical-align: middle;
+                                min-height: 118px;
+                                @include opensans;
+                                font-size: 20px;
+                                color: $cinza;
+                                padding: 0 0 0 10px;
+                            }
+            
+                        }
+
+                        .cnt-fechar {
+                            overflow: hidden;
+                            float: right;
+                            width: auto;
+                            padding: 20px;
+
+                            a.lnk-fechar {
+                                display: block;
+                                overflow: hidden;
+                                width: 37px;
+                                height: 41px;
+                                border: 2px solid $azul;
+                                padding: 6px 11px 12px 11px;
+                                @include folio;
+                                font-size: 20px;
+                                color: $azul;
+                                text-decoration: none;
+                            }
+
+                            .hvr-sweep-to-bottom:before {
+                                background: $rosa;
+                            }
+                
+                            .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                                color: $branco;
+                            }
+
+                        }
+
+                    }
+
+                }     
+
+                .texto-integra {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 670px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    padding: 0 20px;
+
+                    h3 {
+                        @include opensans;
+                        font-size: 16px;
+                        color: $azul;
+                    }
+
+                    p {
+                        @include opensans;
+                        font-size: 14px;
+                        color: $cinza;
+                    }
+
+                }
+
+                ::-webkit-scrollbar {
+                    width: 21px;
+                }
+                
+                ::-webkit-scrollbar-track {
+                    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+                    //-webkit-border-radius: 10px;
+                    //border-radius: 10px;
+                    background: url(../img/bg-tracker.jpg) repeat-y;
+                    //background: $azul;
+                }
+                
+                ::-webkit-scrollbar-thumb {
+                    //-webkit-border-radius: 10px;
+                    //border-radius: 10px;
+                    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+                    background: $azul;  
+                }
+                ::-webkit-scrollbar-thumb:window-inactive {
+                    background: $azul;
+                }
+
+            }
+            */
+            
+        }
+
+    }
+
+// FIM 08. CONHEÇA AGORA +++++++++++
+
+
+// 09. COMO POSSO ME UNIR +++++++++++
+
+    .section-unir {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: url(../img/bg-unir.jpg) repeat;
+        padding: 60px 0 0 0;
+        
+        h2 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            @include folio;
+            font-size: 48px;
+            color: $azul;
+            text-transform: uppercase;
+            text-align: left;
+            margin: 0 0 50px 0;
+            padding-bottom: 25px;
+            border-bottom: 2px solid $azul;
+        }
+
+        .cnt-etapas {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            padding-bottom: 50px;
+
+
+            .etapa-assine {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                min-height: 600px;
+                border-right: 2px solid $azul;
+                padding-right: 30px;
+
+                #frmRespdois {
+                    display: none;
+                    overflow: hidden;
+                    width: 100%;
+                    text-align: center;
+
+                    img {
+                        margin: 0 auto;
+                    }
+
+                } 
+
+                .titulo {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 150px;
+                    @include folio;
+                    font-size: 35px;
+                    color: $azul;
+                    text-transform: uppercase;
+                    background: url(../img/unir-icone-1.jpg) no-repeat right top;
+                    border-bottom: 2px solid $azul;
+                    padding: 95px 0 0 0;
+                }
+
+                form {
+                    margin-top: 44px;
+
+                    .form-group {
+
+                        .form-control {
+                            border: 2px solid $azul;
+                            border-radius: 0;
+                            background: none;
+                            @include folio;
+                            font-size: 18px;
+                            color: $azul;
+                            letter-spacing: 2px;
+                        }
+        
+                        .form-control::-moz-placeholder {
+                            color: $azul;
+                            opacity: 1;
+                        }
+                        .form-control:-ms-input-placeholder {
+                            color: $azul;
+                        }
+                        .form-control::-webkit-input-placeholder {
+                            color: $azul;
+                        }
+
+                    }
+
+                    .checkbox {
+                        margin-bottom: 20px;
+                    }
+
+                    .checkbox label {
+                        //@include folio;
+                        @include opensans;
+                        font-size: 14px;
+                        color: $azul;
+                        text-align: left;
+                    }
+
+                    .checkbox label:after {
+                        content: '';
+                        display: table;
+                        clear: both;
+                    }
+                    
+                    .checkbox .cr {
+                        position: relative;
+                        display: inline-block;
+                        border: 2px solid $branco;
+                        border-radius: 0;
+                        width: 1.3em;
+                        height: 1.3em;
+                        float: left;
+                        margin-right: .5em;
+                        margin-left: -35px;
+                        border-color: $azul;
+
+                    }
+                    
+                    .checkbox .cr .cr-icon {
+                        position: absolute;
+                        font-size: .8em;
+                        line-height: 0;
+                        top: 50%;
+                        left: 15%;
+                        color: $azul;
+                    }
+                    
+                    .checkbox label input[type="checkbox"] {
+                        display: none;
+                    }
+                    
+                    .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+                        opacity: 0;
+                    }
+                    
+                    .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+                        opacity: 1;
+                    }
+                    
+                    .checkbox label input[type="checkbox"]:disabled+.cr {
+                        opacity: .5;
+                    }
+                    .open_modal{
+                    color: $azul;
+                    }
+
+
+                    .btn-default {
+                        border: none;
+                        border-radius: 0;
+                        background: $rosa;
+                        @include folio;
+                        font-size: 20px;
+                        color: $branco;
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        padding: 15px 40px;
+                        margin: 30px auto 0 auto;
+                    }
+        
+                    .hvr-sweep-to-bottom:before {
+                        background: $branco;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $azul-escuro;
+                    }
+
+
+
+                    input[type="checkbox"] {
+                        display:block;
+                    }
+                    
+                    input[type="checkbox"] + label {
+                        position: absolute;
+                        color:#f2f2f2;
+                        top: -3px;
+                        left: -3px;
+                        @include opensans;
+                        font-size: 14px;
+                        color: $azul;
+                        text-align: left;
+                    }
+                    
+                    input[type="checkbox"] + label span {
+                        display:inline-block;
+                        width:21px;
+                        height:18px;
+                        margin:-2px 10px 0 0;
+                        vertical-align:middle;
+                        
+                        background:url(../img/bg-checkbox2.png) left top no-repeat;
+                        //background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+                        cursor:pointer;
+                    }
+                    
+                    input[type="checkbox"]:checked + label span {
+                        background:url(../img/bg-checkbox2.png) -23px top no-repeat;;
+                        //background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+                    }
+
+
+
+                }
+
+            }
+
+            .etapa-divulgue {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                min-height: 600px;
+                border-right: 2px solid $azul;
+                padding-right: 30px;
+
+                .titulo {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 150px;
+                    @include folio;
+                    font-size: 35px;
+                    color: $azul;
+                    text-transform: uppercase;
+                    background: url(../img/unir-icone-2.jpg) no-repeat right top;
+                    border-bottom: 2px solid $azul;
+                    padding: 95px 0 0 0;
+                    margin-bottom: 40px;
+                }
+
+                .botoes {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                }
+
+            }
+
+            .etapa-mobilize {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                padding-right: 30px;
+
+                .titulo {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 150px;
+                    @include folio;
+                    font-size: 35px;
+                    color: $azul;
+                    text-transform: uppercase;
+                    background: url(../img/unir-icone-3.jpg) no-repeat right top;
+                    border-bottom: 2px solid $azul;
+                    padding: 95px 0 0 0;
+                    margin-bottom: 40px;
+                }
+
+                #frmResptres {
+                    display: none;
+                    overflow: hidden;
+                    width: 100%;
+                    text-align: center;
+
+                    img {
+                        margin: 0 auto;
+                    }
+
+                } 
+
+                form {
+                    margin-top: 44px;
+                    padding-right: 120px;
+
+                    .tlt {
+                        @include folio;
+                        font-size: 25px;
+                        color: $azul;
+                        line-height: 30px;
+                        text-transform: uppercase;
+                    }
+
+                    .form-group {
+
+                        .form-control {
+                            border: 2px solid $azul;
+                            border-radius: 0;
+                            background: none;
+                            @include folio;
+                            font-size: 18px;
+                            color: $azul;
+                            letter-spacing: 2px;
+                        }
+        
+                        .form-control::-moz-placeholder {
+                            color: $azul;
+                            opacity: 1;
+                        }
+                        .form-control:-ms-input-placeholder {
+                            color: $azul;
+                        }
+                        .form-control::-webkit-input-placeholder {
+                            color: $azul;
+                        }
+
+                    }
+
+                    .checkbox {
+                        margin-bottom: 20px;
+                    }
+
+                    .checkbox label {
+                        //@include folio;
+                        @include opensans;
+                        font-size: 14px;
+                        color: $azul;
+                        text-align: left;
+                    }
+
+                    .checkbox label:after {
+                        content: '';
+                        display: table;
+                        clear: both;
+                    }
+                    
+                    .checkbox .cr {
+                        position: relative;
+                        display: inline-block;
+                        border: 2px solid $branco;
+                        border-radius: 0;
+                        width: 1.3em;
+                        height: 1.3em;
+                        float: left;
+                        margin-right: .5em;
+                        margin-left: -35px;
+                        border-color: $azul;
+
+                    }
+                    
+                    .checkbox .cr .cr-icon {
+                        position: absolute;
+                        font-size: .8em;
+                        line-height: 0;
+                        top: 50%;
+                        left: 15%;
+                        color: $azul;
+                    }
+                    
+                    .checkbox label input[type="checkbox"] {
+                        display: none;
+                    }
+                    
+                    .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+                        opacity: 0;
+                    }
+                    
+                    .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+                        opacity: 1;
+                    }
+                    
+                    .checkbox label input[type="checkbox"]:disabled+.cr {
+                        opacity: .5;
+                    }
+                    .open_modal{
+                    color: $azul;
+                    }
+
+
+                    .btn-default {
+                        border: none;
+                        border-radius: 0;
+                        background: $rosa;
+                        @include folio;
+                        font-size: 20px;
+                        color: $branco;
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        padding: 15px 40px;
+                        margin: 30px auto 0 auto;
+                    }
+        
+                    .hvr-sweep-to-bottom:before {
+                        background: $branco;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $azul-escuro;
+                    }
+
+                }
+
+                input[type="checkbox"] {
+                    display:block;
+                }
+                
+                input[type="checkbox"] + label {
+                    position: absolute;
+                    color:#f2f2f2;
+                    top: -3px;
+                    left: -3px;
+                    @include opensans;
+                    font-size: 14px;
+                    color: $azul;
+                    text-align: left;
+                }
+                
+                input[type="checkbox"] + label span {
+                    display:inline-block;
+                    width:21px;
+                    height:18px;
+                    margin:-2px 10px 0 0;
+                    vertical-align:middle;
+                    
+                    background:url(../img/bg-checkbox2.png) left top no-repeat;
+                    //background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+                    cursor:pointer;
+                }
+                
+                input[type="checkbox"]:checked + label span {
+                    background:url(../img/bg-checkbox2.png) -23px top no-repeat;;
+                    //background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+                }
+
+            }
+
+        }
+
+        .acabamento-section {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: 15px;
+            background: #eb008d;
+            background: -moz-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+            background: -webkit-gradient(left top, right top, color-stop(50%, #eb008d), color-stop(50%, #00aceb));
+            background: -webkit-linear-gradient(left, #eb008d 0%, #00aceb 50%);
+            background: -o-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+            background: -ms-linear-gradient(left, #eb008d 50%, #00aceb 50%);
+            background: linear-gradient(to right, #eb008d 50%, #00aceb 50%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb008d', endColorstr='#00aceb', GradientType=1 );
+        }
+
+    }
+
+// FIM 09. COMO POSSO ME UNIR +++++++++++
+
+
+// 10. MOBILIZE +++++++++++
+
+    .section-mobilize-mobile {
+        display: none;
+    }
+
+    .section-mobilize {
+        display: block!important;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: #292c97 url(../img/bg-mobilize.jpg) no-repeat center top;
+        padding: 120px 0 0 0;
+
+        h2 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            @include folio;
+            font-size: 80px;
+            color: $branco;
+            text-transform: uppercase;
+            text-align: left;
+            margin: 0 0 30px 0;
+            padding: 0 0 0 0;
+        }
+
+        h3 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            @include opensans;
+            font-size: 30px;
+            color: $branco;
+            text-align: left;
+            margin: 0 0 50px 0;
+            padding: 0 0 25px 0;
+            border-bottom: 5px solid $branco;
+        }
+        p a{
+            color:$branco;
+            text-decoration: underline;
+        }
+
+        .cnt-thumbs {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            margin: 0 0 50px 0;
+
+            .img-responsive {
+                width: 100%;
+            }
+
+            .thumb-topo {
+                display: block;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                height: 38px;
+
+                .topo-l {
+                    display: block;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;  
+                    left: 0;
+                    min-width: 50%;
+                    height: auto;
+                    @include opensans;
+                    font-size: 20px;
+                    color: $branco;
+                    text-transform: uppercase;
+                    padding: 5px 10px;
+                    margin: 0;
+                }
+
+                .topo-r {
+                    display: block;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;  
+                    right: 0;
+                    width: 50%;
+                    height: 38px;
+                }
+
+                .topo-full {
+                    display: block;
+                    overflow: hidden;
+                    min-width: 100%;
+                    height: auto;
+                    @include opensans;
+                    font-size: 20px;
+                    color: $branco;
+                    text-transform: uppercase;
+                    padding: 5px 10px;
+                    margin: 0;
+                }
+
+            }
+
+            .thumb-rodape {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+
+                .topo-l {
+                    display: block;
+                    overflow: hidden;
+                    float: left;
+                    width: 50%;
+                    height: 28px;
+                }
+
+                .topo-r {
+                    display: block;
+                    overflow: hidden;
+                    float: left;
+                    width: 50%;
+                    height: auto;
+                    text-transform: uppercase;
+
+                    a.lnk-download {
+                        display: block;
+                        overflow: hidden;
+                        width: 100%;
+                        height: auto;
+                        @include opensans;
+                        font-size: 20px;
+                        color: $branco;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 0 0 0 10px;
+                    }
+
+                    .hvr-sweep-to-bottom:before {
+                        background: $branco;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $azul-escuro;
+                    }
+
+                }
+
+            }
+
+            .thumb-sugestoes {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 345px;
+                background: $branco;
+                padding: 45px 20px;
+                @include opensans;
+                font-size: 20px;
+                color: $azul;
+                line-height: 24px;
+
+                a {
+                    color: $azul;
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+
+                }
+
+            }
+
+            .color-azul-light {
+                background: $azul-light;
+            }
+
+            .color-rosa {
+                background: $rosa;
+            }
+
+            .borda-top-azul-light {
+                border-bottom: 5px solid $azul-light;
+            }
+
+            .borda-top-rosa {
+                border-bottom: 5px solid $rosa;
+            }
+
+            .borda-bottom-azul-light {
+                border-top: 5px solid $azul-light;
+            }
+
+            .borda-bottom-rosa {
+                border-top: 5px solid $rosa;
+            }
+
+            .divisoria {
+                clear: both;
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 80px;
+            }
+
+        }
+
+        .cnt-cross {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            padding: 0 0 50px 0;
+        }
+   
+
+    }
+
+// FIM 10. MOBILIZE +++++++++++
+
+
+// 11. PARCEIROS +++++++++++
+
+    .section-parceiros {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: #f2f2f2;
+        padding: 50px 0;
+
+        h2 {
+            display: block;
+            width: 100%;
+            @include folio;
+            font-size: 32px;
+            color: $azul;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .cnt-logos-parceiros {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+
+            img {
+                margin: 50px 50px 0 0;
+            }
+
+            img:nth-child(3) {
+                margin: 50px 0 0 0;
+            }
+
+        }
+
+
+    }
+
+// FIM 11. PARCEIROS +++++++++++
+
+
+// 12. MODAL
+
+
+.bg_modal{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background: #333; 
+  opacity: 1.0;
+  -moz-opacity:1;
+  filter: alpha(opacity=1);
+   display:none;
+}
+
+.box_modal{
+    width:450px;
+    position: fixed;
+    left:10%;
+    right:10%;
+    top:10vh;
+    padding:60px 80px;
+    background:#FFF;
+    opacity: 0;
+    -moz-opacity:0;
+    filter: alpha(opacity=0);
+    display:none;
+    z-index: 1001;
+    width: 80vw;
+    height: 80vh;
+    overflow:auto; 
+}
+.box_modal_ativo{
+
+  opacity: 1;
+  -moz-opacity:10;
+  filter: alpha(opacity=1);
+   display:block;
+    
+}
+.open_modal{
+    color:#fff;
+    text-decoration:underline;
+                    &:hover {
+                    background: $branco;
+                    color: $azul-escuro;
+                }
+    
+}
+
+.close_modal{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1002;
+    cursor: pointer;
+    /* float: right; */
+    background: #fff;
+    padding: 5px;;
+
+}
+
+
+// FIM 12. MODAL

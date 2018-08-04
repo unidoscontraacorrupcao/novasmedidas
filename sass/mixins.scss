@@ -1,0 +1,82 @@
+// FONTS
+
+@font-face {
+    font-family: 'Folio';
+    src:    url('fonts/Folio-BoldCondensed.eot?#iefix') format('embedded-opentype'),  
+            url('fonts/Folio-BoldCondensed.woff') format('woff'), 
+            url('fonts/Folio-BoldCondensed.ttf')  format('truetype'), 
+            url('fonts/Folio-BoldCondensed.svg#Folio-BoldCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src:    url('fonts/HelveticaNeueLTStd-ThCn.eot?#iefix') format('embedded-opentype'),  
+            url('fonts/HelveticaNeueLTStd-ThCn.otf')  format('opentype'),
+            url('fonts/HelveticaNeueLTStd-ThCn.woff') format('woff'), 
+            url('fonts/HelveticaNeueLTStd-ThCn.ttf')  format('truetype'), 
+            url('fonts/HelveticaNeueLTStd-ThCn.svg#HelveticaNeueLTStd-ThCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@mixin folio() {
+    font-family: 'Folio', sans-serif;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin helvetica() {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+@mixin opensans() {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+// CUSTOM CONFIGS
+@mixin transition($time) {
+    -webkit-transition:all $time ease-out;
+    -moz-transition:all $time ease-out;
+    -ms-transition:all $time ease-out;
+    -o-transition:all $time ease-out;
+    transition:all $time ease-out;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+// ALIGN CONFIGS
+@mixin horizontal-align-center() {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin vertical-align-center() {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}

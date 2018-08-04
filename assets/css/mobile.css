@@ -1,0 +1,1278 @@
+@charset "UTF-8";
+/*  
+
+    Autor: Marcos Brito
+    E-mail: marcos.venicios@outlook.com
+    
+    -------------------------------------------------------------------
+
+    ÍNDICE DE SEÇÕES A FIM DE FUTURAS EDIÇÕES
+
+    (Ctrl + F: busque pelo número e nome do índice)
+
+        . GOOGLE FONTS, IMPORTS, MIXINS, CUSTOM E COLORS
+        . TELAS 1366px
+        . TELAS 1280px
+        . TELAS 1024px
+        . TELAS 990px
+        . TELAS 768px
+        . TELAS 570px
+        . TELAS 414px
+
+    -------------------------------------------------------------------
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
+@import url("hover.css");
+@font-face {
+  font-family: 'Folio';
+  src: url("fonts/Folio-BoldCondensed.eot?#iefix") format("embedded-opentype"), url("fonts/Folio-BoldCondensed.woff") format("woff"), url("fonts/Folio-BoldCondensed.ttf") format("truetype"), url("fonts/Folio-BoldCondensed.svg#Folio-BoldCondensed") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("fonts/HelveticaNeueLTStd-ThCn.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueLTStd-ThCn.otf") format("opentype"), url("fonts/HelveticaNeueLTStd-ThCn.woff") format("woff"), url("fonts/HelveticaNeueLTStd-ThCn.ttf") format("truetype"), url("fonts/HelveticaNeueLTStd-ThCn.svg#HelveticaNeueLTStd-ThCn") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (max-width: 1440px) {
+  .section-mobilize a.lnk-download {
+    font-size: 15px !important; } }
+/* TELAS 1366px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 1366px) {
+  /*
+  header {
+      .cnt-mn {
+          margin-left: -50px;
+      }
+      .cnt-sociais {
+          margin-right: -50px;
+      }
+  }
+  */
+  .section-fases {
+    padding-bottom: 50px; }
+    .section-fases .align-datas {
+      width: 1024px;
+      margin-left: -100px; }
+      .section-fases .align-datas .cnt-texto p {
+        font-size: 20px;
+        line-height: 22px; }
+
+  .section-as-novas-medidas {
+    height: auto;
+    padding-bottom: 50px; }
+    .section-as-novas-medidas .cnt-icone {
+      width: 150px; }
+      .section-as-novas-medidas .cnt-icone img {
+        width: 100%; }
+      .section-as-novas-medidas .cnt-icone p {
+        font-size: 20px;
+        margin-top: 20px; }
+
+  .section-conheca-agora {
+    /*
+    .cnt-medidas {
+        .col-md-2 {
+            float: none;
+            width: 100%;
+        }
+        .col-md-7 {
+            float: none;
+            width: 100%;
+        }
+        .col-md-3 {
+            float: none;
+            width: 100%;
+        }
+        .cnt-num-bloco {
+            span.txt-bloco {
+                width: 100%;
+                text-align: center;
+            }
+            span.num-bloco {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .cnt-titulo-bloco {
+            span.titulo-medida {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    */ }
+    .section-conheca-agora h2:before {
+      width: 20%; }
+    .section-conheca-agora h2:after {
+      width: 20%; }
+    .section-conheca-agora .col-md-6 {
+      width: 50%; }
+    .section-conheca-agora .col-md-8 {
+      width: 100%;
+      margin-left: 0px; }
+
+  .section-mobilize {
+    background: #292c97 url(../img/bg-mobilize.jpg) no-repeat -190px top; }
+
+  /*
+  .section-mobilize {
+      .cnt-thumbs {
+          .col-md-3 {
+              width: 50%;
+              padding-bottom: 30px;
+          }
+          .divisoria {
+              display: none;
+          }
+      }
+  }
+  */
+  .section-parceiros .cnt-logos-parceiros img {
+    margin: 50px 10px 0 0;
+    width: 250px; }
+  .section-parceiros .cnt-logos-parceiros img:nth-child(2) {
+    margin: 50px 0 0 0; }
+  .section-parceiros .cnt-logos-parceiros img:nth-child(4) {
+    margin: 50px 0 0 50px; }
+
+  .section-unir .cnt-etapas .etapa-mobilize form {
+    padding-right: 0px; } }
+/* FIM TELAS 1366px ++++++++++++++++++++++++++++++++++++++++++ */
+/* TELAS 1280px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 1280px) {
+  .section-parceiros .cnt-logos-parceiros img {
+    margin: 50px 10px 0 0;
+    width: 250px; }
+  .section-parceiros .cnt-logos-parceiros img:nth-child(4) {
+    margin: 50px 0 0 0; }
+
+  .section-as-novas-medidas .lnk-bt {
+    margin-bottom: 20px; }
+
+  .section-fases {
+    padding-bottom: 50px; }
+    .section-fases .align-datas {
+      width: 100%;
+      margin-left: 0; }
+      .section-fases .align-datas .cnt-texto p {
+        font-size: 20px;
+        line-height: 22px; }
+
+  .section-video .cnt-video .cnt-btn-play {
+    margin-top: 20%; }
+
+  .section-parceiros .cnt-logos-parceiros img {
+    margin: 50px 10px 0 0;
+    width: 200px; }
+  .section-parceiros .cnt-logos-parceiros img:nth-child(4) {
+    margin: 50px 0 0 0; } }
+/* FIM TELAS 1280px ++++++++++++++++++++++++++++++++++++++++++ */
+/* TELAS 1024px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 1024px) {
+  .section-parceiros .cnt-logos-parceiros img {
+    margin: 50px 10px 0 0;
+    width: 200px; }
+  .section-parceiros .cnt-logos-parceiros img:nth-child(4) {
+    margin: 50px 0 0 0; }
+
+  .section-as-novas-medidas .lnk-bt {
+    margin-bottom: 20px; }
+
+    /*
+    .section-fases {
+        padding-bottom: 50px;
+        .align-datas {
+            width: 1024px!important;
+            margin-left: -100px!important;
+            .cnt-texto {
+                p {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+*/
+  .box-etapa {
+    margin-right: 2% !important; }
+
+  .section-video .cnt-video .cnt-btn-play {
+    margin-top: 28% !important; }
+  .section-video .cnt-video .cnt-social-share {
+    right: 10% !important; }
+
+  .section-mobilize .col-md-8:nth-child(2) {
+    width: 100%;
+    margin-left: 0; }
+  .section-mobilize a.lnk-download {
+    font-size: 17px; }
+
+  .section-unir .col-md-4 {
+    float: none;
+    width: 100%; }
+  .section-unir .cnt-etapas .etapa-assine {
+    border-right: 0;
+    padding-right: 0;
+    min-height: 400px; }
+  .section-unir .cnt-etapas .etapa-divulgue {
+    border-right: 0;
+    min-height: 400px; }
+  .section-unir .cnt-etapas .etapa-mobilize {
+    padding-right: 0px; } }
+/* FIM TELAS 1024px ++++++++++++++++++++++++++++++++++++++++++ */
+/* TELAS 990px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 990px) {
+  header .cnt-mn {
+    text-align: center;
+    margin-bottom: 20px; }
+    header .cnt-mn a {
+      display: inline-block;
+      float: none;
+      margin-right: 20px;
+      font-size: 16px; }
+    header .cnt-mn a:nth-child(4) {
+      margin-right: 0px; }
+  header .cnt-sociais {
+    text-align: center; }
+    header .cnt-sociais a.lnk-social {
+      display: inline-block;
+      float: none; }
+    header .cnt-sociais a.lnk-social:nth-child(1) {
+      margin-left: 0px; }
+
+  .section-fases .col-md-1 {
+    display: none; }
+  .section-fases .align-datas {
+    width: 100%;
+    margin-left: 0;
+    padding: 0; }
+    .section-fases .align-datas .cnt-texto p {
+      font-size: 20px;
+      line-height: 22px; }
+  .section-fases .cnt-numero {
+    font-size: 80px; }
+  .section-fases .cnt-texto {
+    padding-right: 20px; }
+    .section-fases .cnt-texto p {
+      font-size: 10px; }
+
+  .section-as-novas-medidas .cnt-logo {
+    display: none; }
+  .section-as-novas-medidas .cnt-logo-mobile {
+    display: block;
+    width: 100%;
+    text-align: center; }
+    .section-as-novas-medidas .cnt-logo-mobile img {
+      margin: 0 auto; }
+  .section-as-novas-medidas .cnt-icone {
+    width: 100%; }
+    .section-as-novas-medidas .cnt-icone img {
+      width: auto; }
+    .section-as-novas-medidas .cnt-icone p {
+      font-size: 24px;
+      margin-top: 20px; }
+
+  .section-conheca-agora {
+    display: none; }
+
+  .section-conheca-agora-mobile {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background: #e2e3e4;
+    padding: 40px 0 0 0; }
+    .section-conheca-agora-mobile h2 {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 37px;
+      color: #2f3192;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0 30px 0; }
+    .section-conheca-agora-mobile h2:before {
+      content: '';
+      display: block;
+      float: left;
+      width: 30%;
+      height: 2px;
+      background: #2f3192;
+      margin: 20px 0 0 0; }
+    .section-conheca-agora-mobile h2:after {
+      content: '';
+      display: block;
+      float: right;
+      width: 30%;
+      height: 2px;
+      background: #2f3192;
+      margin: 20px 30px 0 0; }
+    .section-conheca-agora-mobile .lnk-medida {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      background: none;
+      margin-bottom: 30px; }
+      .section-conheca-agora-mobile .lnk-medida .col-xs-2 {
+        padding-left: 0;
+        padding-right: 0; }
+      .section-conheca-agora-mobile .lnk-medida .col-xs-8 {
+        padding-left: 0;
+        padding-right: 0; }
+      .section-conheca-agora-mobile .lnk-medida .cnt-num-bloco {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: #2f3192;
+        padding: 15px 0 10px 0;
+        text-align: center; }
+        .section-conheca-agora-mobile .lnk-medida .cnt-num-bloco span.txt-bloco {
+          display: block;
+          overflow: hidden;
+          font-family: 'Folio', sans-serif;
+          font-style: normal;
+          text-rendering: optimizeLegibility;
+          font-size: 23px;
+          color: #fff;
+          text-transform: uppercase;
+          text-align: center;
+          width: 80%;
+          padding: 0 0 5px 0;
+          border-bottom: 3px solid #fff;
+          margin: 0 auto; }
+        .section-conheca-agora-mobile .lnk-medida .cnt-num-bloco span.num-bloco {
+          display: block;
+          overflow: hidden;
+          font-family: 'Folio', sans-serif;
+          font-style: normal;
+          text-rendering: optimizeLegibility;
+          font-size: 40px;
+          color: #fff;
+          width: 80%;
+          margin: 0 auto; }
+      .section-conheca-agora-mobile .lnk-medida .cnt-titulo-bloco {
+        display: table;
+        overflow: hidden;
+        width: 100%;
+        min-height: 122px;
+        background: #fff; }
+        .section-conheca-agora-mobile .lnk-medida .cnt-titulo-bloco span.titulo-medida {
+          display: table-cell;
+          vertical-align: middle;
+          min-height: 122px;
+          font-family: 'Open Sans Condensed', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          text-rendering: optimizeLegibility;
+          font-size: 20px;
+          color: #b7b8b7;
+          padding: 0 0 0 10px; }
+      .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia {
+        display: table;
+        overflow: hidden;
+        width: 100%;
+        min-height: 122px;
+        background: #fff; }
+        .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia .cnt-cnt {
+          display: table-cell;
+          vertical-align: middle;
+          min-height: 123px; }
+          .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia .cnt-cnt .lnk-leia {
+            display: block;
+            overflow: hidden;
+            font-family: 'Folio', sans-serif;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            width: 90px;
+            padding: 5px 0;
+            margin: 0 auto;
+            background: #2f3192; }
+          .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia .cnt-cnt .hvr-sweep-to-bottom:before {
+            background: #d5258f; }
+          .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia .cnt-cnt .hvr-sweep-to-bottom:hover, .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia .cnt-cnt .hvr-sweep-to-bottom:focus, .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia .cnt-cnt .hvr-sweep-to-bottom:active {
+            color: #fff; }
+      .section-conheca-agora-mobile .lnk-medida .box-integra-medida {
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background: #fff;
+        /* Let's get this party started */
+        /* Track */
+        /* Handle */ }
+        .section-conheca-agora-mobile .lnk-medida .box-integra-medida .texto-integra {
+          display: block;
+          overflow: hidden;
+          width: 100%;
+          height: auto;
+          padding: 20px 20px; }
+          .section-conheca-agora-mobile .lnk-medida .box-integra-medida .texto-integra h3 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            text-rendering: optimizeLegibility;
+            font-size: 18px;
+            color: #2f3192; }
+          .section-conheca-agora-mobile .lnk-medida .box-integra-medida .texto-integra p {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            text-rendering: optimizeLegibility;
+            font-size: 16px;
+            color: #b7b8b7; }
+          .section-conheca-agora-mobile .lnk-medida .box-integra-medida .texto-integra .bt_download {
+            display: block;
+            overflow: hidden;
+            font-family: 'Folio', sans-serif;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 200px;
+            padding: 5px 0;
+            background: #2f3192;
+            margin: 10px auto; }
+          .section-conheca-agora-mobile .lnk-medida .box-integra-medida .texto-integra .hvr-sweep-to-bottom:before {
+            background: #d5258f; }
+          .section-conheca-agora-mobile .lnk-medida .box-integra-medida .texto-integra .hvr-sweep-to-bottom:hover, .section-conheca-agora-mobile .lnk-medida .box-integra-medida .texto-integra .hvr-sweep-to-bottom:focus, .section-conheca-agora-mobile .lnk-medida .box-integra-medida .texto-integra .hvr-sweep-to-bottom:active {
+            color: #fff; }
+        .section-conheca-agora-mobile .lnk-medida .box-integra-medida ::-webkit-scrollbar {
+          width: 21px; }
+        .section-conheca-agora-mobile .lnk-medida .box-integra-medida ::-webkit-scrollbar-track {
+          background: url(../img/bg-tracker.jpg) repeat-y; }
+        .section-conheca-agora-mobile .lnk-medida .box-integra-medida ::-webkit-scrollbar-thumb {
+          background: #2f3192; }
+        .section-conheca-agora-mobile .lnk-medida .box-integra-medida ::-webkit-scrollbar-thumb:window-inactive {
+          background: #2f3192; }
+    .section-conheca-agora-mobile a.lnk-baixar-arquivo-completo {
+      display: block;
+      overflow: hidden;
+      width: auto;
+      height: auto;
+      background: #2f3192;
+      padding: 0;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-rendering: optimizeLegibility;
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      padding: 20px 0;
+      margin: 30px 0; }
+
+  /*
+  .section-conheca-agora {
+      padding: 0;
+      background: none;
+      h2 {
+          display: none;
+      }
+      .clearfix {
+          display: none;
+      }
+      .divisor {
+          display: none;
+      }
+      .cnt-medidas {
+          margin-top: 0; 
+          .col-md-2 {
+              float: left;
+              width: 20%;
+          }
+          .col-md-7 {
+              float: left;
+              width: 50%;
+          }
+          .col-md-3 {
+              float: left;
+              width: 30%;
+          }
+          .reset-padding {
+              margin-bottom: 20px;
+          }
+          .cnt-titulo-bloco {
+              span.titulo-medida {
+                  width: 100%;
+                  text-align: left;
+              }
+          }
+      }
+  }
+  */
+  .section-unir h2 {
+    text-align: center; }
+  .section-unir .etapa-assine {
+    padding-left: 30px;
+    padding-right: 30px !important; }
+  .section-unir .etapa-divulgue {
+    padding-left: 30px;
+    padding-right: 30px !important; }
+  .section-unir .etapa-mobilize {
+    padding-left: 30px;
+    padding-right: 30px !important; }
+    .section-unir .etapa-mobilize form {
+      padding-right: 0 !important; }
+      .section-unir .etapa-mobilize form .form-group .form-control {
+        height: 40px; }
+
+  .section-mobilize {
+    background: #292c97 url(../img/bg-mobilize.jpg) no-repeat -330px top;
+    padding: 75px 0 0 0; }
+    .section-mobilize h2 {
+      margin-left: 30px; }
+    .section-mobilize h3 {
+      margin-left: 30px;
+      width: 92%; }
+
+  .section-mobilize {
+    display: none !important; }
+
+  .section-mobilize-mobile {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: #292c97 url(../img/bg-mobilize.jpg) no-repeat center top;
+    padding: 120px 0 0 0; }
+    .section-mobilize-mobile h2 {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 80px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: left;
+      margin: 0 0 30px 0;
+      padding: 0 0 0 0; }
+    .section-mobilize-mobile h3 {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-rendering: optimizeLegibility;
+      font-size: 20px;
+      color: #fff;
+      text-align: left;
+      margin: 0 0 50px 0;
+      padding: 0 0 25px 0;
+      border-bottom: 5px solid #fff; }
+    .section-mobilize-mobile p a {
+      color: #fff;
+      text-decoration: underline; }
+    .section-mobilize-mobile .cnt-thumbs-mobile {
+      color: #fff;
+      overflow: hidden;
+      height: auto; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .thumb-topo {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 38px; }
+        .section-mobilize-mobile .cnt-thumbs-mobile .thumb-topo .topo-l {
+          display: block;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-width: 50%;
+          height: auto;
+          font-family: 'Open Sans Condensed', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          text-rendering: optimizeLegibility;
+          font-size: 20px;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          margin: 0; }
+        .section-mobilize-mobile .cnt-thumbs-mobile .thumb-topo .topo-r {
+          display: block;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50%;
+          height: 38px; }
+        .section-mobilize-mobile .cnt-thumbs-mobile .thumb-topo .topo-full {
+          display: block;
+          overflow: hidden;
+          min-width: 100%;
+          height: auto;
+          font-family: 'Open Sans Condensed', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          text-rendering: optimizeLegibility;
+          font-size: 20px;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          margin: 0; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .thumb-rodape {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto; }
+        .section-mobilize-mobile .cnt-thumbs-mobile .thumb-rodape .topo-l {
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 50%;
+          height: 28px; }
+        .section-mobilize-mobile .cnt-thumbs-mobile .thumb-rodape .topo-r {
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 50%;
+          height: auto;
+          text-transform: uppercase; }
+          .section-mobilize-mobile .cnt-thumbs-mobile .thumb-rodape .topo-r a.lnk-download {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            text-rendering: optimizeLegibility;
+            font-size: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 0 0 10px; }
+          .section-mobilize-mobile .cnt-thumbs-mobile .thumb-rodape .topo-r .hvr-sweep-to-bottom:before {
+            background: #fff; }
+          .section-mobilize-mobile .cnt-thumbs-mobile .thumb-rodape .topo-r .hvr-sweep-to-bottom:hover, .section-mobilize-mobile .cnt-thumbs-mobile .thumb-rodape .topo-r .hvr-sweep-to-bottom:focus, .section-mobilize-mobile .cnt-thumbs-mobile .thumb-rodape .topo-r .hvr-sweep-to-bottom:active {
+            color: #000083; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .thumb-sugestoes {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        min-height: 480px;
+        background: #fff;
+        padding: 45px 20px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        text-rendering: optimizeLegibility;
+        font-size: 20px;
+        color: #2f3192;
+        line-height: 24px; }
+        .section-mobilize-mobile .cnt-thumbs-mobile .thumb-sugestoes a {
+          color: #2f3192;
+          text-decoration: underline; }
+          .section-mobilize-mobile .cnt-thumbs-mobile .thumb-sugestoes a:hover {
+            text-decoration: none; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .color-azul-light {
+        background: #00adec; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .color-rosa {
+        background: #d5258f; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .borda-top-azul-light {
+        border-bottom: 5px solid #00adec; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .borda-top-rosa {
+        border-bottom: 5px solid #d5258f; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .borda-bottom-azul-light {
+        border-top: 5px solid #00adec; }
+      .section-mobilize-mobile .cnt-thumbs-mobile .borda-bottom-rosa {
+        border-top: 5px solid #d5258f; }
+    .section-mobilize-mobile .owl-theme .owl-dots {
+      bottom: 95px;
+      width: 100%; }
+    .section-mobilize-mobile .owl-theme .owl-dots .owl-dot span {
+      background: #245cb8;
+      opacity: 0.3;
+      width: 12px;
+      height: 12px; }
+    .section-mobilize-mobile .owl-theme .owl-dots .owl-dot.active span, .section-mobilize-mobile .owl-theme .owl-dots .owl-dot:hover span {
+      background: #0993da;
+      opacity: 1;
+      width: 15px;
+      height: 15px; }
+    .section-mobilize-mobile .cnt-cross {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+      padding: 30px 0 50px 0; }
+
+  .section-video .cnt-video .cnt-btn-play {
+    margin-top: 28% !important; }
+  .section-video .cnt-video .cnt-social-share {
+    right: 0 !important;
+    width: 100%; } }
+/* FIM TELAS 990px ++++++++++++++++++++++++++++++++++++++++++ */
+/* TELAS 768px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 768px) {
+  header .cnt-mn {
+    margin-left: 0px; }
+  header .cnt-sociais {
+    margin-right: 0px; }
+
+  .section-fases .col-md-1 {
+    display: none; }
+  .section-fases .align-datas {
+    width: 100%;
+    margin-left: 0;
+    padding: 0; }
+    .section-fases .align-datas .cnt-texto p {
+      font-size: 20px;
+      line-height: 22px; }
+  .section-fases .cnt-numero {
+    font-size: 80px; }
+  .section-fases .cnt-texto {
+    padding-right: 20px; }
+    .section-fases .cnt-texto p {
+      font-size: 10px; }
+
+  .section-as-novas-medidas .cnt-logo {
+    display: none; }
+  .section-as-novas-medidas .cnt-logo-mobile {
+    display: block;
+    width: 100%;
+    text-align: center; }
+    .section-as-novas-medidas .cnt-logo-mobile img {
+      margin: 0 auto; }
+  .section-as-novas-medidas .cnt-icone {
+    width: 100%; }
+    .section-as-novas-medidas .cnt-icone img {
+      width: auto; }
+    .section-as-novas-medidas .cnt-icone p {
+      font-size: 24px;
+      margin-top: 20px; }
+
+  .section-conheca-agora {
+    padding: 0;
+    background: none; }
+    .section-conheca-agora h2 {
+      display: none; }
+    .section-conheca-agora .clearfix {
+      display: none; }
+    .section-conheca-agora .divisor {
+      display: none; }
+    .section-conheca-agora .cnt-medidas {
+      margin-top: 0; }
+      .section-conheca-agora .cnt-medidas .col-md-2 {
+        float: left;
+        width: 20%; }
+      .section-conheca-agora .cnt-medidas .col-md-7 {
+        float: left;
+        width: 50%; }
+      .section-conheca-agora .cnt-medidas .col-md-3 {
+        float: left;
+        width: 30%; }
+      .section-conheca-agora .cnt-medidas .reset-padding {
+        margin-bottom: 20px; }
+      .section-conheca-agora .cnt-medidas .cnt-titulo-bloco span.titulo-medida {
+        width: 100%;
+        text-align: left; }
+
+  .section-unir h2 {
+    text-align: center; }
+  .section-unir .etapa-assine {
+    padding-left: 30px;
+    padding-right: 30px !important; }
+  .section-unir .etapa-divulgue {
+    padding-left: 30px;
+    padding-right: 30px !important; }
+  .section-unir .etapa-mobilize {
+    padding-left: 30px;
+    padding-right: 30px !important; }
+    .section-unir .etapa-mobilize form {
+      padding-right: 0 !important; }
+      .section-unir .etapa-mobilize form .form-group .form-control {
+        height: 40px; }
+
+  .section-mobilize {
+    background: #292c97 url(../img/bg-mobilize.jpg) no-repeat -330px top;
+    padding: 75px 0 0 0; }
+    .section-mobilize h2 {
+      margin-left: 30px; }
+    .section-mobilize h3 {
+      margin-left: 30px;
+      width: 92%; }
+
+  .section-video .cnt-video .cnt-btn-play {
+    margin-top: 40% !important; }
+
+  .modal-video-close-btn {
+    right: 0px !important; } }
+/* FIM TELAS 768px ++++++++++++++++++++++++++++++++++++++++++ */
+/* TELAS 570px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 570px) {
+  .section-fases {
+    display: none; }
+
+  .section-fases-mobile {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: url(../img/bg-cinza.jpg) repeat;
+    padding: 50px 0 30px 0; }
+    .section-fases-mobile .col-xs-12 {
+      width: 100%;
+      text-align: center; }
+    .section-fases-mobile h2 {
+      margin: 0 0 20px 0;
+      width: 100%;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 42px;
+      color: #000083;
+      text-transform: uppercase;
+      text-align: center; }
+    .section-fases-mobile h3 {
+      margin: 0 0 20px 0;
+      width: 100%;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 28px;
+      color: #000083;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0 50px; }
+    .section-fases-mobile .cnt-data-inicio {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin: 0 0 50px 0; }
+    .section-fases-mobile .cnt-data-fim {
+      display: inline-block;
+      overflow: hidden;
+      float: none;
+      margin-right: 0 auto; }
+    .section-fases-mobile span.txt01 {
+      display: inline-block;
+      background: #2f3192;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 26px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 3px; }
+    .section-fases-mobile span.txt02 {
+      display: inline-block;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 26px;
+      color: #2f3192;
+      text-transform: uppercase;
+      padding: 0 3px; }
+    .section-fases-mobile .item-fases {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin-bottom: 30px; }
+      .section-fases-mobile .item-fases .cnt-numero {
+        display: inline-block;
+        overflow: hidden;
+        font-family: 'Folio', sans-serif;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+        font-size: 100px;
+        color: #2f3192; }
+      .section-fases-mobile .item-fases .cnt-texto {
+        display: inline-block;
+        overflow: hidden;
+        border-left: 2px solid #2f3192;
+        width: 150px;
+        min-height: 157px;
+        padding: 32px 0 0 0;
+        margin-left: 10px;
+        text-align: left; }
+        .section-fases-mobile .item-fases .cnt-texto p {
+          font-family: 'Folio', sans-serif;
+          font-style: normal;
+          text-rendering: optimizeLegibility;
+          font-size: 22px;
+          color: #2f3192;
+          line-height: 30px;
+          text-transform: uppercase;
+          padding-left: 10px; }
+        .section-fases-mobile .item-fases .cnt-texto p:after {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 30px;
+          margin-left: -10px;
+          background: #ec008e;
+          background: -moz-linear-gradient(-45deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          background: -webkit-gradient(left top, right bottom, color-stop(50%, #ec008e), color-stop(50%, rgba(227, 50, 34, 0)));
+          background: -webkit-linear-gradient(-45deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          background: -o-linear-gradient(-45deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          background: -ms-linear-gradient(-45deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          background: linear-gradient(135deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec008e', endColorstr='#e33222', GradientType=1 ); } }
+/* FIM TELAS 570px ++++++++++++++++++++++++++++++++++++++++++ */
+/* TELAS 414px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 414px) {
+    /*
+    header {
+        .cnt-mn {
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            a {
+                display: inline-block;
+                float: none;
+                margin-right: 20px;
+                font-size: 16px;
+            }
+            
+            a:nth-child(4) {
+                margin-right: 0px;
+            }
+
+        }
+
+        .cnt-sociais {
+            float: none;
+            width: 100%;
+            text-align: center;
+
+            a.lnk-social {
+                display: inline-block;
+                float: none;
+            }
+
+            a.lnk-social:nth-child(1) {
+                margin-left: 0px;
+            }
+
+        }
+
+    }
+    */
+  header {
+    padding: 20px 0 !important; }
+    header .cnt-mn {
+      margin-left: -20px; }
+      header .cnt-mn a {
+        margin-right: 5px !important;
+        font-size: 14px; }
+    header .cnt-sociais {
+      margin-right: -20px;
+      padding-top: 7px; }
+      header .cnt-sociais a.lnk-social {
+        width: 28px;
+        height: 28px;
+        font-size: 14px; }
+
+  #okRespForm .titulo {
+    padding-top: 112px !important; }
+  #okRespForm .btn-default {
+    margin-top: 60px !important; }
+
+  .section-webdoor .desktop {
+    display: none; }
+  .section-webdoor .mobile {
+    display: block; }
+
+  .section-fases {
+    display: none; }
+
+  .section-fases-mobile {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: url(../img/bg-cinza.jpg) repeat;
+    padding: 50px 0 30px 0; }
+    .section-fases-mobile h2 {
+      margin: 0 0 20px 0;
+      width: 100%;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 42px;
+      color: #000083;
+      text-transform: uppercase;
+      text-align: center; }
+    .section-fases-mobile h3 {
+      margin: 0 0 20px 0;
+      width: 100%;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 28px;
+      color: #000083;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0 50px; }
+    .section-fases-mobile .cnt-data-inicio {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin: 0 0 50px 0; }
+    .section-fases-mobile .cnt-data-fim {
+      display: block;
+      overflow: hidden;
+      float: right;
+      margin-right: 50px; }
+    .section-fases-mobile span.txt01 {
+      display: inline-block;
+      background: #2f3192;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 26px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 3px; }
+    .section-fases-mobile span.txt02 {
+      display: inline-block;
+      font-family: 'Folio', sans-serif;
+      font-style: normal;
+      text-rendering: optimizeLegibility;
+      font-size: 26px;
+      color: #2f3192;
+      text-transform: uppercase;
+      padding: 0 3px; }
+    .section-fases-mobile .item-fases {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin-bottom: 30px; }
+      .section-fases-mobile .item-fases .cnt-numero {
+        display: inline-block;
+        overflow: hidden;
+        font-family: 'Folio', sans-serif;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+        font-size: 100px;
+        color: #2f3192; }
+      .section-fases-mobile .item-fases .cnt-texto {
+        display: inline-block;
+        overflow: hidden;
+        border-left: 2px solid #2f3192;
+        width: 150px;
+        min-height: 157px;
+        padding: 32px 0 0 0;
+        margin-left: 10px;
+        text-align: left; }
+        .section-fases-mobile .item-fases .cnt-texto p {
+          font-family: 'Folio', sans-serif;
+          font-style: normal;
+          text-rendering: optimizeLegibility;
+          font-size: 22px;
+          color: #2f3192;
+          line-height: 30px;
+          text-transform: uppercase;
+          padding-left: 10px; }
+        .section-fases-mobile .item-fases .cnt-texto p:after {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 30px;
+          margin-left: -10px;
+          background: #ec008e;
+          background: -moz-linear-gradient(-45deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          background: -webkit-gradient(left top, right bottom, color-stop(50%, #ec008e), color-stop(50%, rgba(227, 50, 34, 0)));
+          background: -webkit-linear-gradient(-45deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          background: -o-linear-gradient(-45deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          background: -ms-linear-gradient(-45deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          background: linear-gradient(135deg, #ec008e 50%, rgba(227, 50, 34, 0) 50%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec008e', endColorstr='#e33222', GradientType=1 ); }
+
+  /*
+  .section-conheca-agora {
+      h2 {
+          background: url(../img/bg-tit-conheca-agora.png) no-repeat 430px top;
+      }
+      h2:before {
+          width: 20%;
+      }
+      h2:after {
+          width: 20%;
+      }
+      .cnt-medidas {
+          .col-md-2 {
+              float: none;
+              width: 100%;
+          }
+          .col-md-7 {
+              float: none;
+              width: 100%;
+          }
+          .col-md-3 {
+              float: none;
+              width: 100%;
+          }
+          .cnt-num-bloco {
+              span.txt-bloco {
+                  width: 100%;
+                  text-align: center;
+              }
+              span.num-bloco {
+                  width: 100%;
+                  text-align: center;
+              }
+          }
+          .cnt-titulo-bloco {
+              min-height: 10px;
+              span.titulo-medida {
+                  width: 100%;
+                  text-align: center;
+                  padding-right: 10px;
+                  padding-top: 15px;
+              }
+          }
+          .reset-padding {
+              margin-bottom: 0;
+          }
+      }
+  }
+  */
+  .section-conheca-agora-mobile h2 {
+    font-size: 28px;
+    background: url(../img/bg-tit-conheca-agora.png) no-repeat 300px top !important; }
+  .section-conheca-agora-mobile h2:before {
+    width: 0 !important; }
+  .section-conheca-agora-mobile h2:after {
+    width: 0 !important; }
+  .section-conheca-agora-mobile .lnk-medida .cnt-num-bloco span.txt-bloco {
+    font-size: 16px !important;
+    padding: 0 0 2px 0 !important;
+    border-bottom: 1px solid #fff !important; }
+  .section-conheca-agora-mobile .lnk-medida .cnt-num-bloco span.num-bloco {
+    font-size: 48px !important; }
+  .section-conheca-agora-mobile .lnk-medida .cnt-titulo-bloco {
+    min-height: 118px !important; }
+    .section-conheca-agora-mobile .lnk-medida .cnt-titulo-bloco span.titulo-medida {
+      font-size: 14px !important;
+      min-height: 118px !important; }
+  .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia {
+    min-height: 118px !important; }
+    .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia .cnt-cnt {
+      min-height: 118px !important; }
+      .section-conheca-agora-mobile .lnk-medida .cnt-btn-leia .cnt-cnt .lnk-leia {
+        font-size: 14px !important;
+        width: 50px !important; }
+
+  .section-unir .cnt-etapas .etapa-assine {
+    margin-bottom: 50px;
+    background: url(../img/bg-tit-conheca-agora.png) no-repeat 350px top; }
+
+  .section-manifesto .cnt-texto-manifesto .text-completo-ativo {
+    height: 750px;
+    padding-top: 50px; }
+    .section-manifesto .cnt-texto-manifesto .text-completo-ativo p br {
+      display: none; }
+  .section-manifesto .cnt-texto-manifesto-ativo {
+    height: 780px; }
+
+  .section-video h2 {
+    font-size: 28px;
+    padding: 0 40px; }
+  .section-video .cnt-video .cnt-btn-play {
+    margin-top: 70% !important; }
+
+  .box_modal {
+    padding: 10px 20px; }
+    .box_modal h2 {
+      font-size: 20px !important; }
+    .box_modal p {
+      font-size: 12px !important; }
+    .box_modal ul {
+      margin-left: -25px; }
+      .box_modal ul li {
+        font-size: 12px !important; }
+
+  .section-formulario h3 {
+    font-size: 24px;
+    padding: 0 20px; }
+    .section-formulario h3 span {
+      font-size: 18px;
+      line-height: 30px; }
+
+  .section-parceiros h2 {
+    font-size: 22px; }
+
+  .section-mobilize-mobile {
+    padding: 80px 0 0 0; }
+    .section-mobilize-mobile h2 {
+      font-size: 50px; }
+    .section-mobilize-mobile h3 {
+      font-size: 16px; }
+    .section-mobilize-mobile p {
+      font-size: 16px; } }
+/* FIM TELAS 414px ++++++++++++++++++++++++++++++++++++++++++ */
+/* TELAS 375px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 375px) {
+  header {
+    padding: 20px 0 !important; }
+    header .cnt-mn {
+      margin-left: -20px; }
+      header .cnt-mn a {
+        margin-right: 5px !important;
+        font-size: 14px; }
+    header .cnt-sociais {
+      margin-right: -20px;
+      padding-top: 7px; }
+      header .cnt-sociais a.lnk-social {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+        margin-left: 5px; }
+    header .fixar .cnt-mn {
+      margin-left: -25px; } }
+/* FIM TELAS 375px ++++++++++++++++++++++++++++++++++++++++++ */
+/* TELAS 320px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 320px) {
+  header .cnt-mn {
+    float: none;
+    width: 312px !important;
+    text-align: center;
+    margin: 0 20px 0 -25px !important; }
+    header .cnt-mn a {
+      display: inline-block;
+      float: none;
+      margin-right: 20px;
+      font-size: 16px; }
+    header .cnt-mn a:nth-child(4) {
+      margin-right: 0px; }
+  header .cnt-sociais {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px; }
+    header .cnt-sociais a.lnk-social {
+      display: inline-block;
+      float: none; }
+    header .cnt-sociais a.lnk-social:nth-child(1) {
+      margin-left: 0px; } }
+/* FIM TELAS 320px ++++++++++++++++++++++++++++++++++++++++++ */
+
+/*# sourceMappingURL=mobile.css.map */

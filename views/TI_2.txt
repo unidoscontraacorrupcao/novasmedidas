@@ -1,0 +1,54 @@
+
+HOME
+
+*trocar a imagem do header (video MANISFESTO)
+
+*trocar os textos LOREM IPSUM
+
+*linkar os blocos da home:
+Medidas conta a corrupção == http://www.unidoscontraacorrupcao.org.br
+Indice de percepção da corrupção 2017 == http://www.ipc.transparecenciainternacional.org.br
+
+*no "pq isso é importante, fica apenas o texto. SAI charge, compartilhamento e botao de explicação completa.
+
+* seção nova na home chamada Acontece.
+um bloco com as tres ultimas noticias na home do site. (conteudo estatico)
+
+_________
+
+QUEM SOMOS
+
+
+QUEMSOMOS/ MANISFESTO
+*trocar imagem do hero da pagina de
+hero 1920x1122
+
+QUEMSOMOS/ NO BRASIL
+* sub sub menu
+
+
+*links dos pdfs [etica e liderança]
+
+*trocar a foto da equipe
+*falta mini bio de Filipe Pascoa
+
+****TUDODECONSELHO
+*trocar foto do conselho
+*trocar texto do conselho
+
+
+
+
+OQUE FAZEMOS
+
+* colocar o titulo no hero e setinha
+
+* faltam textos de  "Conheça os programas e os centros criados pela TI:"
+
+PARTICIPE
+
+* colocar o titulo no hero e setinha
+
+* definir formulario de colaborador.
+
+* link para "FAÇA UMA DOAÇÃO" (vai ser um link enviado pela TI)

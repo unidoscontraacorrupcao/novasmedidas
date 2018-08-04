@@ -1,0 +1,1943 @@
+/*  
+
+    Autor: Marcos Brito
+    E-mail: marcos.venicios@outlook.com
+    
+    -------------------------------------------------------------------
+
+    ÍNDICE DE SEÇÕES A FIM DE FUTURAS EDIÇÕES
+
+    (Ctrl + F: busque pelo número e nome do índice)
+
+        . GOOGLE FONTS, IMPORTS, MIXINS, CUSTOM E COLORS
+        . TELAS 1366px
+        . TELAS 1280px
+        . TELAS 1024px
+        . TELAS 990px
+        . TELAS 768px
+        . TELAS 570px
+        . TELAS 414px
+
+    -------------------------------------------------------------------
+
+*/
+
+// GOOGLE FONTS, IMPORTS, MIXINS, CUSTOM E COLORS +++++++++++
+
+    // Google Fonts
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+    // Mixins
+    @import 'mixins';
+
+    // Hover Animations
+    @import url("hover.css");
+
+    // Colors
+    $branco: #fff;
+    $preto: #000;
+    $cinza: #b7b8b7;
+    $cinza-escuro: #777777;
+    $cinza-claro: #e2e3e4;
+    $grafite: #4a4a4a;
+    $azul: #2f3192;
+    $azul-escuro: #000083;
+    $azul-claro: #24a8d9;
+    $azul-light: #00adec;
+    $rosa: #d5258f;
+    $rosa-light: #ec008c;
+
+// FIM GOOGLE FONTS, IMPORTS, MIXINS, CUSTOM E COLORS +++++++++++
+
+
+@media screen and (max-width: 1440px) {
+
+
+    //mobilize
+    .section-mobilize {
+        
+         a.lnk-download{
+            font-size:15px !important;
+            
+         }
+
+
+         
+    }
+
+}    
+
+
+
+/* TELAS 1366px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 1366px) {
+
+    // header
+    /*
+    header {
+        .cnt-mn {
+            margin-left: -50px;
+        }
+        .cnt-sociais {
+            margin-right: -50px;
+        }
+    }
+    */
+
+
+
+    // fases
+    .section-fases {
+        padding-bottom: 50px;
+        .align-datas {
+            width: 1024px;
+            margin-left: -100px;
+            .cnt-texto {
+                p {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+
+    // as novas medidas
+    .section-as-novas-medidas {
+        height: auto;
+        padding-bottom: 50px;
+        .cnt-icone {
+            width: 150px;
+            img {
+                width: 100%;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+    
+
+
+    // conheça agora
+    .section-conheca-agora {
+        h2 {
+            //background: url(../img/bg-tit-conheca-agora.png) no-repeat 430px top;
+        }
+        h2:before {
+            width: 20%;
+        }
+        h2:after {
+            width: 20%;
+        }
+        .col-md-6 {
+            width: 50%;
+        }
+
+        .col-md-8 {
+            width: 100%;
+            margin-left: 0px;
+        }
+        /*
+        .cnt-medidas {
+            .col-md-2 {
+                float: none;
+                width: 100%;
+            }
+            .col-md-7 {
+                float: none;
+                width: 100%;
+            }
+            .col-md-3 {
+                float: none;
+                width: 100%;
+            }
+            .cnt-num-bloco {
+                span.txt-bloco {
+                    width: 100%;
+                    text-align: center;
+                }
+                span.num-bloco {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .cnt-titulo-bloco {
+                span.titulo-medida {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        */
+    }
+
+
+    
+
+
+    // mobilize
+    .section-mobilize {
+        background: #292c97 url(../img/bg-mobilize.jpg) no-repeat -190px top;
+    }
+
+
+
+    // mobilize
+    /*
+    .section-mobilize {
+        .cnt-thumbs {
+            .col-md-3 {
+                width: 50%;
+                padding-bottom: 30px;
+            }
+            .divisoria {
+                display: none;
+            }
+        }
+    }
+    */
+
+
+    // parceiros
+    .section-parceiros {
+        .cnt-logos-parceiros {
+            img {
+                margin: 50px 10px 0 0;
+                width: 250px;
+            } 
+            img:nth-child(2) {
+                margin: 50px 0 0 0;
+            }
+            img:nth-child(4) {
+                margin: 50px 0 0 50px;
+            }
+        }
+    }
+
+
+
+
+    // como posso me unir
+    .section-unir {
+        .cnt-etapas {
+
+            .etapa-mobilize {
+                form {
+                    padding-right: 0px;
+                }
+            }
+        }
+        
+    }
+
+
+    
+    
+
+}
+/* FIM TELAS 1366px ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* TELAS 1280px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 1280px) {
+
+    
+    // parceiros
+    .section-parceiros {
+        .cnt-logos-parceiros {
+            img {
+                 margin: 50px 10px 0 0;
+                width: 250px;
+            } 
+            img:nth-child(4) {
+                margin: 50px 0 0 0;
+            }
+        }
+    }
+
+
+    // as novas medidas
+    .section-as-novas-medidas {
+        .lnk-bt {
+            margin-bottom: 20px;
+        }
+    }
+
+    // fases
+    .section-fases {
+        padding-bottom: 50px;
+        .align-datas {
+            width: 100%;
+            margin-left: 0;
+            .cnt-texto {
+                p {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+    
+
+
+
+    // video
+    .section-video {
+        .cnt-video {
+            .cnt-btn-play {
+                margin-top: 20%;
+            }
+        }
+    }
+    
+    // parceiros
+    .section-parceiros {
+        .cnt-logos-parceiros {
+            img {
+                margin: 50px 10px 0 0;
+                width: 200px;
+            } 
+            img:nth-child(4) {
+                margin: 50px 0 0 0;
+            }
+        }
+    }
+
+}
+/* FIM TELAS 1280px ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* TELAS 1024px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 1024px) {
+
+    
+    // parceiros
+    .section-parceiros {
+        .cnt-logos-parceiros {
+            img {
+                margin: 50px 10px 0 0;
+                width: 200px;
+            } 
+            img:nth-child(4) {
+                margin: 50px 0 0 0;
+            }
+        }
+    }
+
+
+
+    // as novas medidas
+    .section-as-novas-medidas {
+        .lnk-bt {
+            margin-bottom: 20px;
+        }
+    }
+
+    
+    
+
+    // fases
+    /*
+    .section-fases {
+        padding-bottom: 50px;
+        .align-datas {
+            width: 1024px!important;
+            margin-left: -100px!important;
+            .cnt-texto {
+                p {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+*/
+    .box-etapa{
+        margin-right:2% !important;
+    }
+
+    
+
+    // video
+    .section-video {
+        .cnt-video {
+            .cnt-btn-play {
+                margin-top: 28%!important;
+            }
+            .cnt-social-share {
+                right: 10%!important;
+                //width: 100%;
+                //border: 1px solid #000;
+            }
+        }
+    }   
+
+
+
+    //mobilize
+    .section-mobilize {
+        .col-md-8:nth-child(2) {
+            width: 100%;
+            margin-left: 0;
+        }
+
+         a.lnk-download{
+            font-size:17px;
+         }
+    }
+
+
+
+    // como posso me unir
+    .section-unir {
+        .col-md-4 {
+            float: none;
+            width: 100%;
+        }
+        .cnt-etapas {
+            .etapa-assine {
+                border-right: 0;
+                padding-right: 0;
+                min-height: 400px;
+            }
+            .etapa-divulgue {
+                border-right: 0;
+                min-height: 400px;
+            }
+            .etapa-mobilize {
+                padding-right: 0px;
+            }
+        }
+        
+    }
+
+
+}
+/* FIM TELAS 1024px ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* TELAS 990px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 990px) {
+
+    // header
+    header {
+        .cnt-mn {
+            //float: none;
+            //width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            a {
+                display: inline-block;
+                float: none;
+                margin-right: 20px;
+                font-size: 16px;
+            }
+            
+            a:nth-child(4) {
+                margin-right: 0px;
+            }
+
+        }
+
+        .cnt-sociais {
+            //float: none;
+            //width: 100%;
+            text-align: center;
+
+            a.lnk-social {
+                display: inline-block;
+                float: none;
+            }
+
+            a.lnk-social:nth-child(1) {
+                margin-left: 0px;
+            }
+
+        }
+
+    }
+
+
+    // fases
+    .section-fases {
+        .col-md-1 {
+            display: none;
+        }
+        .align-datas {
+            width: 100%;
+            margin-left: 0;
+            padding: 0;
+            .cnt-texto {
+                p {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .cnt-numero {
+            font-size: 80px;
+        }
+        .cnt-texto {
+            padding-right: 20px;
+            p {
+                font-size: 10px;
+            }
+        } 
+
+    }
+
+
+    // as novas medidas
+    .section-as-novas-medidas {
+        .cnt-logo {
+            display: none;
+        }
+        .cnt-logo-mobile {
+            display: block;
+            width: 100%;
+            text-align: center;
+            img {
+                margin: 0 auto;
+            }
+        }
+        .cnt-icone {
+            width: 100%;
+            img {
+                width: auto;
+            }
+            p {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+
+
+
+
+    // conheça agora
+    .section-conheca-agora {
+        display: none;
+    }
+
+    .section-conheca-agora-mobile {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        background: $cinza-claro;
+        padding: 40px 0 0 0;
+
+        h2 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            @include folio;
+            font-size: 37px;
+            color: $azul;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 0 30px 0;
+            
+        }
+
+        h2:before {
+            content: '';
+            display: block;
+            float: left;
+            width: 30%; 
+            height: 2px;
+            background: $azul;
+            margin: 20px 0 0 0;
+        }
+        h2:after {
+            content: '';
+            display: block;
+            float: right;
+            width: 30%; 
+            height: 2px;
+            background: $azul;
+            margin: 20px 30px 0 0;
+        }
+
+        .lnk-medida {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            background: none;
+            margin-bottom: 30px;
+
+            .col-xs-2 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .col-xs-8 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .cnt-num-bloco {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                background: $azul;
+                padding: 15px 0 10px 0;
+                text-align: center;
+
+                span.txt-bloco {
+                    display: block;  
+                    overflow: hidden;
+                    @include folio;
+                    font-size: 23px;
+                    color: $branco;
+                    text-transform: uppercase;
+                    text-align: center;
+                    width: 80%;
+                    padding: 0 0 5px 0;
+                    border-bottom: 3px solid $branco;
+                    margin: 0 auto;
+                }
+
+                span.num-bloco {
+                    display: block;  
+                    overflow: hidden;
+                    @include folio;
+                    font-size: 40px;
+                    color: $branco;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+            }
+
+            .cnt-titulo-bloco {
+                display: table;
+                overflow: hidden;
+                width: 100%;
+                min-height: 122px;
+                background: $branco;
+
+                span.titulo-medida {
+                    display: table-cell; 
+                    vertical-align: middle;
+                    min-height: 122px;
+                    @include opensans;
+                    font-size: 20px;
+                    color: $cinza;
+                    padding: 0 0 0 10px;
+                }
+
+            }
+
+            .cnt-btn-leia {
+                display: table;
+                overflow: hidden;
+                width: 100%;
+                min-height: 122px;
+                background: $branco;
+
+                .cnt-cnt {
+                    display: table-cell; 
+                    vertical-align: middle;
+                    min-height: 123px;
+
+                    .lnk-leia {
+                        display: block;
+                        overflow: hidden;
+                        //border: 2px solid $azul;   
+                        @include folio;
+                        font-size: 20px;
+                        color: $branco;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 90px;
+                        padding: 5px 0;
+                        margin: 0 auto;
+                        background: $azul;
+                    }
+
+                    .hvr-sweep-to-bottom:before {
+                        background: $rosa;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $branco;
+                    }
+
+                }
+
+            }
+
+            .box-integra-medida {
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                background: $branco;
+
+                .texto-integra {
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: auto;
+                    //height: 670px;
+                    //overflow-y: scroll;
+                    //overflow-x: hidden;
+                    padding: 20px 20px;
+
+                    h3 {
+                        @include opensans;
+                        font-size: 18px;
+                        color: $azul;
+                    }
+
+                    p {
+                        @include opensans;
+                        font-size: 16px;
+                        color: $cinza;
+                    }
+
+                    .bt_download {
+                        display: block;
+                        overflow: hidden;
+                        //border: 2px solid $azul;   
+                        @include folio;
+                        font-size: 16px;
+                        color: $branco;
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        width: 200px;
+                        padding: 5px 0;
+                        background: $azul;
+                        margin: 10px auto;
+                    }
+
+                    .hvr-sweep-to-bottom:before {
+                        background: $rosa;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $branco;
+                    }
+
+                }
+
+                /* Let's get this party started */
+                ::-webkit-scrollbar {
+                    width: 21px;
+                }
+                
+                /* Track */
+                ::-webkit-scrollbar-track {
+                    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+                    //-webkit-border-radius: 10px;
+                    //border-radius: 10px;
+                    background: url(../img/bg-tracker.jpg) repeat-y;
+                    //background: $azul;
+                }
+                
+                /* Handle */
+                ::-webkit-scrollbar-thumb {
+                    //-webkit-border-radius: 10px;
+                    //border-radius: 10px;
+                    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+                    background: $azul;  
+                }
+                ::-webkit-scrollbar-thumb:window-inactive {
+                    background: $azul;
+                }
+
+            }
+
+        }
+
+        a.lnk-baixar-arquivo-completo {
+            display: block;
+            overflow: hidden;
+            width: auto;
+            height: auto;
+            background: $azul;
+            padding: 0;
+            @include opensans;
+            font-size: 24px;
+            color: $branco;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 0;
+            margin: 30px 0;
+        }
+
+    }
+
+
+    // conheça agora
+    /*
+    .section-conheca-agora {
+        padding: 0;
+        background: none;
+        h2 {
+            display: none;
+        }
+        .clearfix {
+            display: none;
+        }
+        .divisor {
+            display: none;
+        }
+        .cnt-medidas {
+            margin-top: 0; 
+            .col-md-2 {
+                float: left;
+                width: 20%;
+            }
+            .col-md-7 {
+                float: left;
+                width: 50%;
+            }
+            .col-md-3 {
+                float: left;
+                width: 30%;
+            }
+            .reset-padding {
+                margin-bottom: 20px;
+            }
+            .cnt-titulo-bloco {
+                span.titulo-medida {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    */
+
+
+    // como posso me unir
+    .section-unir {
+        h2 {
+            text-align: center;
+        }
+        .etapa-assine {
+            padding-left: 30px;
+            padding-right: 30px!important;
+        }
+        .etapa-divulgue {
+            padding-left: 30px;
+            padding-right: 30px!important;
+        }
+        .etapa-mobilize {
+            padding-left: 30px;
+            padding-right: 30px!important;
+            form {
+                padding-right: 0!important;
+                .form-group {
+                    .form-control {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    // mobilize
+    .section-mobilize {
+        background: #292c97 url(../img/bg-mobilize.jpg) no-repeat -330px top;
+        padding: 75px 0 0 0;
+        h2 {
+            margin-left: 30px;
+        }
+        h3 {
+            margin-left: 30px;
+            width: 92%;
+        }
+    }
+
+
+
+
+
+
+    // mobilize
+    .section-mobilize {
+        display: none!important;
+    }
+
+    .section-mobilize-mobile {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: #292c97 url(../img/bg-mobilize.jpg) no-repeat center top;
+        padding: 120px 0 0 0;
+
+        h2 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            @include folio;
+            font-size: 80px;
+            color: $branco;
+            text-transform: uppercase;
+            text-align: left;
+            margin: 0 0 30px 0;
+            padding: 0 0 0 0;
+        }
+
+        h3 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            @include opensans;
+            font-size: 20px;
+            color: $branco;
+            text-align: left;
+            margin: 0 0 50px 0;
+            padding: 0 0 25px 0;
+            border-bottom: 5px solid $branco;
+        }
+        p a{
+            color:$branco;
+            text-decoration: underline;
+        }   
+
+        .cnt-thumbs-mobile {
+            color: $branco;
+            overflow: hidden;
+            height: auto;
+
+            .thumb-topo {
+                display: block;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                height: 38px;
+
+                .topo-l {
+                    display: block;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;  
+                    left: 0;
+                    min-width: 50%;
+                    height: auto;
+                    @include opensans;
+                    font-size: 20px;
+                    color: $branco;
+                    text-transform: uppercase;
+                    padding: 5px 10px;
+                    margin: 0;
+                }
+
+                .topo-r {
+                    display: block;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;  
+                    right: 0;
+                    width: 50%;
+                    height: 38px;
+                }
+
+                .topo-full {
+                    display: block;
+                    overflow: hidden;
+                    min-width: 100%;
+                    height: auto;
+                    @include opensans;
+                    font-size: 20px;
+                    color: $branco;
+                    text-transform: uppercase;
+                    padding: 5px 10px;
+                    margin: 0;
+                }
+
+            }
+
+            .thumb-rodape {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+
+                .topo-l {
+                    display: block;
+                    overflow: hidden;
+                    float: left;
+                    width: 50%;
+                    height: 28px;
+                }
+
+                .topo-r {
+                    display: block;
+                    overflow: hidden;
+                    float: left;
+                    width: 50%;
+                    height: auto;
+                    text-transform: uppercase;
+
+                    a.lnk-download {
+                        display: block;
+                        overflow: hidden;
+                        width: 100%;
+                        height: auto;
+                        @include opensans;
+                        font-size: 20px;
+                        color: $branco;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 0 0 0 10px;
+                    }
+
+                    .hvr-sweep-to-bottom:before {
+                        background: $branco;
+                    }
+        
+                    .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active { 
+                        color: $azul-escuro;
+                    }
+
+                }
+
+            }
+
+            .thumb-sugestoes {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                min-height: 480px;
+                background: $branco;
+                padding: 45px 20px;
+                @include opensans;
+                font-size: 20px;
+                color: $azul;
+                line-height: 24px;
+
+                a {
+                    color: $azul;
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+
+                }
+
+            }
+
+            .color-azul-light {
+                background: $azul-light;
+            }
+
+            .color-rosa {
+                background: $rosa;
+            }
+
+            .borda-top-azul-light {
+                border-bottom: 5px solid $azul-light;
+            }
+
+            .borda-top-rosa {
+                border-bottom: 5px solid $rosa;
+            }
+
+            .borda-bottom-azul-light {
+                border-top: 5px solid $azul-light;
+            }
+
+            .borda-bottom-rosa {
+                border-top: 5px solid $rosa;
+            }
+
+        }
+
+        .owl-theme .owl-dots {
+            bottom: 95px;
+            width: 100%;
+        }  
+    
+        .owl-theme .owl-dots .owl-dot span {
+            background: #245cb8;
+            opacity: 0.3;
+            width: 12px;
+            height: 12px;
+        }
+    
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+            background: #0993da;
+            opacity: 1;
+            width: 15px;
+            height: 15px;
+        }
+
+        .cnt-cross {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            padding: 30px 0 50px 0;
+        }
+
+    }
+
+
+
+    // video
+    .section-video {
+        .cnt-video {
+            .cnt-btn-play {
+                margin-top: 28%!important;
+            }
+            .cnt-social-share {
+                right: 0!important;
+                width: 100%;
+            }
+        }
+    }  
+
+
+}
+/* FIM TELAS 990px ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* TELAS 768px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 768px) {
+
+    // header
+    header {
+        .cnt-mn {
+            margin-left: 0px;
+        }
+        .cnt-sociais {
+            margin-right: 0px;
+        }
+    }
+
+
+    // fases
+    .section-fases {
+        .col-md-1 {
+            display: none;
+        }
+        .align-datas {
+            width: 100%;
+            margin-left: 0;
+            padding: 0;
+            .cnt-texto {
+                p {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .cnt-numero {
+            font-size: 80px;
+        }
+        .cnt-texto {
+            padding-right: 20px;
+            p {
+                font-size: 10px;
+            }
+        } 
+
+    }
+
+
+    // as novas medidas
+    .section-as-novas-medidas {
+        .cnt-logo {
+            display: none;
+        }
+        .cnt-logo-mobile {
+            display: block;
+            width: 100%;
+            text-align: center;
+            img {
+                margin: 0 auto;
+            }
+        }
+        .cnt-icone {
+            width: 100%;
+            img {
+                width: auto;
+            }
+            p {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    // conheça agora
+    .section-conheca-agora {
+        padding: 0;
+        background: none;
+        h2 {
+            display: none;
+        }
+        .clearfix {
+            display: none;
+        }
+        .divisor {
+            display: none;
+        }
+        .cnt-medidas {
+            margin-top: 0; 
+            .col-md-2 {
+                float: left;
+                width: 20%;
+            }
+            .col-md-7 {
+                float: left;
+                width: 50%;
+            }
+            .col-md-3 {
+                float: left;
+                width: 30%;
+            }
+            .reset-padding {
+                margin-bottom: 20px;
+            }
+            .cnt-titulo-bloco {
+                span.titulo-medida {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+
+    // como posso me unir
+    .section-unir {
+        h2 {
+            text-align: center;
+        }
+        .etapa-assine {
+            padding-left: 30px;
+            padding-right: 30px!important;
+        }
+        .etapa-divulgue {
+            padding-left: 30px;
+            padding-right: 30px!important;
+        }
+        .etapa-mobilize {
+            padding-left: 30px;
+            padding-right: 30px!important;
+            form {
+                padding-right: 0!important;
+                .form-group {
+                    .form-control {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    // mobilize
+    .section-mobilize {
+        background: #292c97 url(../img/bg-mobilize.jpg) no-repeat -330px top;
+        padding: 75px 0 0 0;
+        h2 {
+            margin-left: 30px;
+        }
+        h3 {
+            margin-left: 30px;
+            width: 92%;
+        }
+    }
+
+
+    // video
+    .section-video {
+        .cnt-video {
+            .cnt-btn-play {
+                margin-top: 40%!important;
+            }
+        }
+    }
+
+
+
+    .modal-video-close-btn {
+        right: 0px!important;
+    }
+    
+
+}
+/* FIM TELAS 768px ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* TELAS 570px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 570px) {
+
+    // fases
+    .section-fases {
+        display: none;
+    }
+
+    .section-fases-mobile {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: url(../img/bg-cinza.jpg) repeat;
+        padding: 50px 0 30px 0;
+
+        .col-xs-12 {
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0 0 20px 0;
+            width: 100%;
+            @include folio;
+            font-size: 42px;
+            color: $azul-escuro;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 0 0 20px 0;
+            width: 100%;
+            @include folio;
+            font-size: 28px;
+            color: $azul-escuro;
+            text-transform: uppercase;
+            text-align: center;
+            padding:0 50px;
+        }
+
+        .cnt-data-inicio {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        .cnt-data-fim {
+            display: inline-block;
+            overflow: hidden;
+            float: none;
+            margin-right: 0 auto;
+        }
+
+        span.txt01 {
+            display: inline-block;
+            background: $azul;
+            @include folio;
+            font-size: 26px;
+            color: $branco;
+            text-transform: uppercase;
+            padding: 0 3px;
+        }
+
+        span.txt02 {
+            display: inline-block;
+            @include folio;
+            font-size: 26px;
+            color: $azul;
+            text-transform: uppercase;
+            padding: 0 3px;
+        }
+
+        .item-fases {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-bottom: 30px;
+
+            .cnt-numero {
+                display: inline-block;
+                overflow: hidden;
+                @include folio;
+                font-size: 100px;
+                color: $azul;
+            }
+    
+            .cnt-texto {
+                display: inline-block;
+                overflow: hidden;
+                border-left: 2px solid $azul;
+                width: 150px;
+                min-height: 157px;
+                padding: 32px 0 0 0;
+                margin-left: 10px;
+                text-align: left;
+    
+                p {
+                    @include folio;
+                    font-size: 22px;
+                    color: $azul;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    padding-left: 10px;
+                }
+    
+                p:after {
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    margin-left: -10px;
+                    background: rgba(236,0,142,1);
+                    background: -moz-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -webkit-gradient(left top, right bottom, color-stop(50%, rgba(236,0,142,1)), color-stop(50%, rgba(227,50,34,0)));
+                    background: -webkit-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -o-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -ms-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: linear-gradient(135deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec008e', endColorstr='#e33222', GradientType=1 );
+                }
+    
+            }
+
+        }
+
+    }
+
+}
+/* FIM TELAS 570px ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* TELAS 414px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 414px) {
+
+    // header
+    /*
+    header {
+        .cnt-mn {
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            a {
+                display: inline-block;
+                float: none;
+                margin-right: 20px;
+                font-size: 16px;
+            }
+            
+            a:nth-child(4) {
+                margin-right: 0px;
+            }
+
+        }
+
+        .cnt-sociais {
+            float: none;
+            width: 100%;
+            text-align: center;
+
+            a.lnk-social {
+                display: inline-block;
+                float: none;
+            }
+
+            a.lnk-social:nth-child(1) {
+                margin-left: 0px;
+            }
+
+        }
+
+    }
+    */
+
+    // header
+    header {
+        padding: 20px 0!important;
+        .cnt-mn {
+            margin-left: -20px;
+            a {
+                margin-right: 5px!important;
+                font-size: 14px;
+            }
+        }
+        .cnt-sociais {
+            margin-right: -20px;
+            padding-top: 7px;
+            a.lnk-social {
+                width: 28px;
+                height: 28px;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    //divulgue
+    #okRespForm{
+     .titulo{
+        padding-top:112px !important;
+     }
+     .btn-default{
+        margin-top:60px !important;
+     }
+    }
+
+
+
+    // webdoor
+    .section-webdoor {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+    }
+
+
+    
+
+
+
+    // fases
+    .section-fases {
+        display: none;
+    }
+
+    .section-fases-mobile {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: url(../img/bg-cinza.jpg) repeat;
+        padding: 50px 0 30px 0;
+
+        h2 {
+            margin: 0 0 20px 0;
+            width: 100%;
+            @include folio;
+            font-size: 42px;
+            color: $azul-escuro;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 0 0 20px 0;
+            width: 100%;
+            @include folio;
+            font-size: 28px;
+            color: $azul-escuro;
+            text-transform: uppercase;
+            text-align: center;
+            padding:0 50px;
+        }
+
+        .cnt-data-inicio {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        .cnt-data-fim {
+            display: block;
+            overflow: hidden;
+            float: right;
+            margin-right: 50px;
+        }
+
+        span.txt01 {
+            display: inline-block;
+            background: $azul;
+            @include folio;
+            font-size: 26px;
+            color: $branco;
+            text-transform: uppercase;
+            padding: 0 3px;
+        }
+
+        span.txt02 {
+            display: inline-block;
+            @include folio;
+            font-size: 26px;
+            color: $azul;
+            text-transform: uppercase;
+            padding: 0 3px;
+        }
+
+        .item-fases {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-bottom: 30px;
+
+            .cnt-numero {
+                display: inline-block;
+                overflow: hidden;
+                @include folio;
+                font-size: 100px;
+                color: $azul;
+            }
+    
+            .cnt-texto {
+                display: inline-block;
+                overflow: hidden;
+                border-left: 2px solid $azul;
+                width: 150px;
+                min-height: 157px;
+                padding: 32px 0 0 0;
+                margin-left: 10px;
+                text-align: left;
+    
+                p {
+                    @include folio;
+                    font-size: 22px;
+                    color: $azul;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    padding-left: 10px;
+                }
+    
+                p:after {
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    margin-left: -10px;
+                    background: rgba(236,0,142,1);
+                    background: -moz-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -webkit-gradient(left top, right bottom, color-stop(50%, rgba(236,0,142,1)), color-stop(50%, rgba(227,50,34,0)));
+                    background: -webkit-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -o-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: -ms-linear-gradient(-45deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    background: linear-gradient(135deg, rgba(236,0,142,1) 50%, rgba(227,50,34,0) 50%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec008e', endColorstr='#e33222', GradientType=1 );
+                }
+    
+            }
+
+        }
+
+    }
+
+
+
+    // conheça agora
+    /*
+    .section-conheca-agora {
+        h2 {
+            background: url(../img/bg-tit-conheca-agora.png) no-repeat 430px top;
+        }
+        h2:before {
+            width: 20%;
+        }
+        h2:after {
+            width: 20%;
+        }
+        .cnt-medidas {
+            .col-md-2 {
+                float: none;
+                width: 100%;
+            }
+            .col-md-7 {
+                float: none;
+                width: 100%;
+            }
+            .col-md-3 {
+                float: none;
+                width: 100%;
+            }
+            .cnt-num-bloco {
+                span.txt-bloco {
+                    width: 100%;
+                    text-align: center;
+                }
+                span.num-bloco {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .cnt-titulo-bloco {
+                min-height: 10px;
+                span.titulo-medida {
+                    width: 100%;
+                    text-align: center;
+                    padding-right: 10px;
+                    padding-top: 15px;
+                }
+            }
+            .reset-padding {
+                margin-bottom: 0;
+            }
+        }
+    }
+    */
+    .section-conheca-agora-mobile {
+        h2 {
+            font-size: 28px;
+            background: url(../img/bg-tit-conheca-agora.png) no-repeat 300px top!important;
+        }
+        h2:before {
+            width: 0!important;
+        }
+        h2:after {
+            width: 0!important;
+        }
+        .lnk-medida {
+            .cnt-num-bloco {
+                span.txt-bloco {
+                    font-size: 16px!important;
+                    padding: 0 0 2px 0!important;
+                    border-bottom: 1px solid $branco!important;
+                }
+                span.num-bloco {
+                    font-size: 48px!important;
+                }
+            }
+            .cnt-titulo-bloco {
+                min-height: 118px!important;
+                span.titulo-medida {
+                    font-size: 14px!important;
+                    min-height: 118px!important;
+                }
+            }
+            .cnt-btn-leia {
+                min-height: 118px!important;
+                .cnt-cnt {
+                    min-height: 118px!important;
+                    .lnk-leia {
+                        font-size: 14px!important;
+                        width: 50px!important;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // como posso me unir
+    .section-unir {
+        .cnt-etapas {
+            .etapa-assine {
+                margin-bottom: 50px;
+                background: url(../img/bg-tit-conheca-agora.png) no-repeat 350px top;
+            }
+        }
+    }
+
+
+    // manifesto
+    .section-manifesto {
+        .cnt-texto-manifesto {
+            .text-completo-ativo {
+                height: 750px;
+                padding-top: 50px;
+                p {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .cnt-texto-manifesto-ativo {
+            height: 780px;
+        }
+    }
+
+
+
+    // video
+    .section-video {
+        h2 {
+            font-size: 28px;
+            padding: 0 40px;
+        }
+        .cnt-video {
+            .cnt-btn-play {
+                margin-top: 70%!important;
+            }
+        }
+    }
+
+
+
+
+
+    .box_modal {
+        padding:10px 20px;
+        h2 {
+            font-size: 20px!important;
+        }
+        p {
+            font-size: 12px!important;
+        }
+        ul{
+            margin-left: -25px; 
+            li {
+            font-size: 12px!important;
+            }
+        }
+    }
+
+
+
+
+    // formulario 
+    .section-formulario {
+        h3 {
+            font-size: 24px;
+            padding: 0 20px;
+            span{
+                font-size:18px;
+                line-height: 30px;
+               }
+        }
+    }
+
+
+
+
+
+    // parceiros
+    .section-parceiros {
+        h2 {
+            font-size: 22px;
+        }
+    }
+
+
+
+
+
+    // mobilize
+    .section-mobilize-mobile {
+        padding: 80px 0 0 0;
+        h2 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+
+
+
+
+}
+/* FIM TELAS 414px ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/* TELAS 375px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 375px) {
+
+
+
+    // header
+    header {
+        padding: 20px 0!important;
+        .cnt-mn {
+            margin-left: -20px;
+            a {
+                margin-right: 5px!important;
+                font-size: 14px;
+            }
+        }
+        .cnt-sociais {
+            margin-right: -20px;
+            padding-top: 7px;
+            a.lnk-social {
+                width: 28px;
+                height: 28px;
+                font-size: 14px;
+                margin-left: 5px;
+            }
+        }
+        .fixar {
+            .cnt-mn{
+                margin-left: -25px;
+            }
+        }
+    }
+
+
+
+
+}
+/* FIM TELAS 375px ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* TELAS 320px ++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 320px) {
+
+
+
+    // header
+    header {
+        .cnt-mn {
+            float: none;
+            width: 312px!important;
+            text-align: center;
+            margin: 0 20px 0 -25px!important;
+
+            a {
+                display: inline-block;
+                float: none;
+                margin-right: 20px;
+                font-size: 16px;
+            }
+            
+            a:nth-child(4) {
+                margin-right: 0px;
+            }
+
+        }
+
+        .cnt-sociais {
+            float: none;
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+
+            a.lnk-social {
+                display: inline-block;
+                float: none;
+            }
+
+            a.lnk-social:nth-child(1) {
+                margin-left: 0px;
+            }
+
+        }
+
+    }
+
+
+
+
+}
+/* FIM TELAS 320px ++++++++++++++++++++++++++++++++++++++++++ */
+
