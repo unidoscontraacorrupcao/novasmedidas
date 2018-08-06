@@ -1737,7 +1737,7 @@
 
                     <div class="col-xs-12 col-md-offset-2 col-md-8">
                         <h2>Downloads</h2>
-                        <h3>Baixe os materiais da campanha. Existem diversas formas de participar. Além de pressionar, você pode divulgar o movimento em sua cidade e nas redes sociais.
+                        <h3>Baixe os materiais da campanha. Existem diversas formas de participar. Além de pressionar, você pode divulgar o movimento em sua cidade e nas redes sociais. 
                         </h3>
 
                         <p style="color:#fff; margin-top: -40px;">
