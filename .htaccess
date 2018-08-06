@@ -1,2 +1,5 @@
 #Alternate default index page
 DirectoryIndex index.php
+
+RewriteEngine on
+RewriteRule /index.php [L]
