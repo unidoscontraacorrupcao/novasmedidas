@@ -1961,7 +1961,7 @@
                 <div class="row">
 
                     <div class="col-xs-12 col-md-offset-2 col-md-8">
-                        <h2>Mobilize</h2>
+                        <h2>Downloads</h2>
                         <h3>Existem diversas formas de participar dessa campanha. Além de pressionar, você pode divulgar o movimento em sua cidade e nas redes sociais. Abaixo colocamos arquivos para você fazer download e usar à vontade.
                         </h3>
 
